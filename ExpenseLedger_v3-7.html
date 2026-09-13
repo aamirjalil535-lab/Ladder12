@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Expense Ledger</title>
+<meta name="theme-color" content="#1F5B57">
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIkV4cGVuc2UgTGVkZ2VyIiwgInNob3J0X25hbWUiOiAiRXhwZW5zZSBMZWRnZXIiLCAiZGVzY3JpcHRpb24iOiAiU2l0ZSBwdXJjaGFzZXMgJiBmdW5kIHRyYWNraW5nIiwgInN0YXJ0X3VybCI6ICIuIiwgInNjb3BlIjogIi4iLCAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwgImJhY2tncm91bmRfY29sb3IiOiAiI0Y1RjNFQyIsICJ0aGVtZV9jb2xvciI6ICIjMUY1QjU3IiwgIm9yaWVudGF0aW9uIjogInBvcnRyYWl0IiwgImljb25zIjogW3sic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBTUFBQUFEQUNBWUFBQUJTM0d3SEFBQUZXVWxFUVZSNG5PM2Q2WTRVVlJnRzRKckozQUpFa01FTFVWSGlSbHlJcUlETDlibUFSaFNKbWhoa1VTOUVGazJHaThBZncrQXd6TkxWWGRXbitudWZKNW1mZEZlZmVkOCtwNzdwRG12ZHhMejB4ZVhIcmErQjhmejk1WlcxMXRld1c5T0xPZjM1SldHbnUvZlYxV1k1WFBvVEN6MkhXWFlabHZaa2drOGZ5eXJDNkU4aStDeGk3Q0tNOXVDQ3o1REdLc0xnRHlyNGpHbm9JZ3o2WUtjL3V5ajhqTzdlMTk4T2x0dEJIa2p3YVdHSUlxd3YrZ0RDVHl0RFpHK2hBZ2cvclMyYXdia0xJUHhNeFNKWm5Lc0F3cy9Vekp2SjNnVVFmcVpxbm16MnVvcysvZWtud3MvazNmdm11NWx6UGZNT0lQeXNpajVabmFrQXdzK3FtVFd6UnhaQStGbFZzMlIzNFQrRXdTbzd0QURlL1ZsMVIyWDR3THZsemN2Q1R4MzNyK3cvR2RvNCtKL0lQL1h0ZXdUYXZQeXg5RlBLUVpsMkUweTA1d3JnM1orcTlzdTJIWUJvenhUQXV6L1Y3YzM0czFNZzhTZk0wOW5vNXFXUHhKOFk5NjkrdjlaMTdnRUlwd0JFVys4Nnh4L3k3R1RlRGtBMEJTRGE5aGpVQVloUVQvNE9vQUZrV3R1OGVFSDZpZVVlZ0dnS1FMUU41eCtTYmJqL0paa2pFTkUyakVCSlpnY2dtZ0lRVFFHSXBnQkVNd1lsbWgyQWFNYWdSTE1ERUUwQmlLWUFSRE1GSXBvZGdHaW1RRVN6QXhCTkFZam1LNUZFc3dNUXpSaVVhSFlBb2htREVzME9RRFFGSUpvQ0VFMEJpRlorRFByZzJ2WFdsN0R5VGwwNDMvb1NSbE42QnhEK1lWUmV4L1h0TVdpOW44cS90QmEyMTdQOTczWG9uNUk3d0lOclA3VytoSklxcm11NUFsVDhKVTFKdGZVdFZ3RG9vL3dVaUJFVXlvd2RnR2diclM5ZzJVNTkrRUhyUzVpOEJ6L1VPdWNmSnZEVG9HbXZkd3gxMWpEdUs1RnByM2NNbGRiUVBRRFJGSUJvZVdQUXROYzdoa0pyYUFjZ21nSVFMVzRNK3ZESEc2MHZvWUE2bWJFREVFMEJpS1lBUk1zYmc3SzRRcG14QXhCTkFZZ1dOd1psQ0hVeUUvZDlnQmZQdjl2NkVpYnY0ZldmVzEvQzBqZ0NFUzF2Q3BUMmVzZFFhQTN0QUVSVEFLSXBBTkUySGxjNjBNMGc3ZldPb2RJYTJnR0lwZ0JFTXdhbHYwSnJhQWNnbWdJUUxmRERjR212ZHd4MTFqRHV3M0I3L1hQajE5R2Y0K1Q3NTBaL0R1YmpDRVEwVTZDcXp6bW1RcS9IRGtBMEJTQ2FBaEROR0xUc2M0NnB6dXV4QXhBdC91OEFKOTk3cC9VbDBKQXhLUDBWV2tOSElLSXBBTkg4TjZuMFZta05qVUdaUTUwMWRBUWltZ0lRelJpVS9ncXRvUjJBYUFwQU5BVWdtakVvYzZpemhuRWZodnYzbDk5YVh3SVRramNGWW5HRk11TWVnR2dLUUxSeUJUaHg3cTNXbDFCYXRmVXRWNEN1cS9kTG1vcUs2N3ErZlVkVDcrZkV1VGNIWGFoMDIrdlovdmM2OUUvSkhXQ0hFZ3lqOGpxdXZmRDJHNFdHV3RCUDZSMEFqaEwzbFVqWXpRNUFOQVVnV3VDblFlRi9kZ0NpK1RRbzBld0FSRk1Bb2lrQTBSU0FhTWFnUkRNRklwb2pFTkVVZ0dnS1FEUUZJSm9wRU5Ic0FFUXpCaVdhcjBRU3pSR0lhT3RiTjIrdnRiNElhR0hyNXUwMU93RFJudndIR2U0RXlMUmRBUGtubENNUTBkYTdydXUyZnIvalJwZ29PNW0zQXhCTkFZajJ0QUNPUWFUWW5mVTkvMCt3Y1JCWm5udlhQMzcyakJaUTF0YXR1ODlrM2owQTBaNHJ3TjZHUUJYN1pkc09RTFI5QzJBWG9KcURNbTBISU5xaDcvVEh6NzVxSXNUSzI3cjF4NEU1UC9Lb2MreDFKV0IxUGJwOWNQaTd6aEdJY0VjVzRLZ0d3VlROa3QyWmRnQWxZTlhNbXRtWmowQkt3S3JvazlWZTl3Qkt3TlQxemVoY2dUNzIyaXNtUTB6T296dC85czd6WEZPZ2VaNEl4alJ2SnVjZWd5b0JVN0ZJRmhmNk80QVMwTnFpR1Z6NEQyRktRQ3REWkcvUThMbzVaaG1HZk5NZDlLTVFkZ1BHTm5UR1JndnNzVE12MncwWXpLTzdmNDJTMWRIZnNSV0JSWXdWL0IxTE83SW9BbjJNSGZ3ZFN6K3pLd0tIV1Zid2R6UzlhVlVHdW03NW9kOXRjbE1icGFpdFpkajM4eDhuZ1NRMkxoQXFOQUFBQUFCSlJVNUVya0pnZ2c9PSIsICJzaXplcyI6ICIxOTJ4MTkyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIiwgInB1cnBvc2UiOiAiYW55IG1hc2thYmxlIn0sIHsic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBZ0FBQUFJQUNBWUFBQUQwZU5UNkFBQU95RWxFUVZSNG5PM2Q2NjRrVlJuSDRiVkozY0pNT00xNElTcUhvRUlVQ0tpYzlQb1VGQ09LUkVua3JGNklBMGl5NXlMd0EyNm5CL1owZDNXdnFyVlcvWi9uMHlRa1EzVk4xMzUvL1ZaMzc0dENsNzczNjllK2JuME1BRFg4K3plL3UyaDlESHlYZjVSR2J2L3FWUU1lb0pSeTU3ZS9ONHNhY05KWFlOZ0R6Q01LbHVjRUw4REFCNmhMRU5UbmhGWmc0QU9zU3hDY3p3azhrYUVQMEFjeGNCb25iUVpESDZCdll1QjRUdFFCaGo3QW1NVEFmazdPQXhqOEFOc2dCSzducE93dzlBRzJUUXpjNDBRVWd4OGdqUkFJRHdDREh5QmJjZ2hFUG5DREg0QmRpU0VROVlBTmZnRDJTUXFCaUFkcThBTXdSMElJUE5UNkFKWm0rQU13VjhMczJHemhKUHpqQWJDOHJXNEROdmVnREg0QWxyQzFFTmpVZzduOWh1RVB3SEx1dkxtZENOakVBN245eGlzR1B3Q3J1ZlBtMjhQUHorSGZCR2o0QTdDMkxjeWVvUU5nQy84QUFJeHA5QmswNUFwajlKTU93TGFNZUV0Z3VBMkE0UTlBYjBhY1RVTUZ3SWduR0lBTW84Mm9JVllXbzUxVUFMS05jRXVnK3cyQTRRL0FhRWFZWFYwSHdBZ25FQUN1MC9zTTZ6WUFlajl4QUhCSXo3T3N5d0RvK1lRQndCeTl6clR1QXFEWEV3VUFwK3B4dG5VVkFEMmVJQUNvb2JjWjEwMEE5SFppQUtDMm5tWmRGd0hRMHdrQmdDWDFNdk9hQjBBdkp3SUExdExEN0dzYUFEMmNBQUJvb2ZVTWJQWlZoYmRmTi93QjRNNWJiYjQydU1uLzlQYnJ2elQ4QWVCLzdyejFoOVhuOGVxM0FBeC9BTGhmaTltNGFnQVkvZ0J3dmJWbjVHb0JZUGdEd0g1cnpzcFZBc0R3QjREanJEVXptMzhQQUFDd3ZzVUR3S3QvQUpobmpkbTVhQUFZL2dCd21xVm42R0lCWVBnRHdIbVduS1hlQXdBQWdSWUpBSy8rQWFDT3BXWnE5UUF3L0FHZ3JpVm1hOVVBTVB3QllCbTFaNnozQUFCQW9Hb0I0TlUvQUN5cjVxeXQ4dXNIYnhuK0FMQ2F6eXY4K3VDcHhvRVU0eDhBaG5MMkxZQmJyM24xRHdCcnFqRjdLMndBekg4QUdNMVpHNEJici8zQzlBZUFCczZkd1NjSGdPRVBBRzJkTTR0OUR3QUFCRG9wQUx6NkI0QStuRHFUYlFBQUlORHNBUERxSHdENmNzcHN0Z0VBZ0VDekFzQ3Jmd0RvMDl3WmJRTUFBSUdPRGdDdi9nR2diM05tdFEwQUFBUTZLZ0M4K2dlQU1SdzdzMjBBQUNDUUFBQ0FRQWNEd1BvZkFNWnl6T3llRHY0dHhqOEFiTTdlRGNDdFY3MzZCNEFSSFpyaDNnTUFBSUVPM0FLd0FBQ0FMWHJnQnVEV3F6ODMvUUZnWVB0bXVWc0FBQkJJQUFCQW9Hc0R3UG9mQUxiaFFUUGRCZ0FBQWdrQUFBajBuUUN3L2dlQWJibHV0dHNBQUVBZ0FRQUFnUVFBQUFTNkx3RGMvd2VBYmZyMmpMY0JBSUJBQWdBQUFna0FBQWgwY2ZXSFc2KzQvdzhBVy9mNTIzKzhLTVVHQUFBaUNRQUFDRFRkKzZNN0FBQ1F3Z1lBQUFJOVZFb3B0MTU1MmN0L0FBaHdOZk50QUFBZ2tBQUFnRUFDQUFBQ0NRQUFDQ1FBQUNDUUFBQ0FRQUlBQUFKZCtBNEFBTWd6bWY0QWtNY3RBQUFJSkFBQUlORGtsd0FDUUI0YkFBQUlKQUFBSUpBQUFJQkFVL0VtQUFDSVl3TUFBSUVFQUFBRUVnQUFFRWdBQUVBZ0FRQUFnUVFBQUFRU0FBQVFTQUFBUUNBQkFBQ0JCQUFBQkJJQUFCQklBQUJBSUFFQUFJRW12d3dRQVBMWUFBQkFJQUVBQUlFRUFBQUVFZ0FBRUdncTNnVUlBSEZzQUFBZ2tBQUFnRUFDQUFBQ0NRQUFDQ1FBQUNDUUFBQ0FRQUlBQUFJSkFBQUlKQUFBSUpBQUFJQkFBZ0FBQWdrQUFBZzArVjFBQUpESEJnQUFBZ2tBQUFna0FBQWdrQUFBZ0VCVDhTNUFBSWhqQXdBQWdRUUFBQVFTQUFBUVNBQUFRQ0FCQUFDQkJBQUFCSnA4Q0JBQTh0Z0FBRUFnQVFBQWdRUUFBQVFTQUFBUWFQS3JBQUFnancwQUFBUVNBQUFRU0FBQVFDQUJBQUNCQkFBQUJKcUtqd0VBUUJ3YkFBQUlKQUFBSUpBQUFJQkFBZ0FBQWdrQUFBZ2tBQUFna0FBQWdFQUNBQUFDQ1FBQUNDUUFBQ0NRQUFDQVFKTmZCUUFBZVd3QUFDRFExUG9BMks0djNubTM5U0hBSmp6KzhvdXRENEVOdW5qc3BSZmNCS0FxZ3grV0lRU29TUUJRamNFUDZ4QUMxQ0FBT0p2QkQyMElBYzV4OGRoTHp3c0FUdmJGTzM5cGZRZ1E3ZkdYWDJoOUNBektwd0E0bWVFUDdia09PWlVBNENSKzZFQS9YSStjUWdBd214ODIwQi9YSlhNSkFBQUlKQUNZeGFzTTZKZnJremtFQUFBRUVnQWN6YXNMNkovcmxHTUpBQUFJSkFBNGlsY1ZNQTdYSzhjUUFBQVFTQUFBUUtDcCtFMEFBTnZqWnpzSDJBQUFRQ0FCQUFDQkJBQUFCQklBQUJCSUFBQkFJQUVBQUlFbW54V2h0Y2RmZXI3MUlVQVRYL3pwdlFYL2RqL2IyYzhHQUFBQ0NRQUFDRFJaRXRHYTV5RFU1N3JpRUJzQUFBZ2tBQUFna0FBQWdFQUNBQUFDQ1FBQUNDUUFBQ0RRNUxNaU5PYzVDUFc1cmpqQUJnQUFBZ2tBQUFna0FBQWdrQUFBZ0VBQ0FBQUNDUUFBQ0NRQUFDRFE1TU9pdFBibG45OXJmUWl3UVg2MnM1OE5BQUFFRWdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRQ0FCQUFDQkJBQUFCSnA4V1JUQUJ2blp6Z0UyQUFBUVNBQUFRQ0FCQUFDQkJBQUFCQklBQUJCSUFBQkFJQUVBQUlFbUh4WUYyQ0kvMjluUEJnQUFBZ2tBQUFna0FBQWdrQUFBZ0VCVDZ3T0F4MTc4YWV0RGdDYStmUGV2clErQllEWUFBQkJJQUFCQUlBRUFBSUVFQUFBRW1ueFpGTTE1RGtKOXJpc09zQUVBZ0VBQ0FBQUNDUUFBQ0NRQUFDQ1FBQUNBUUFJQUFBSUpBQUFJSkFBQUlORDB0VytMb0RIUFFhalBkY1VoTmdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRQ0FCQUFDQkpoOFZwVG5QUWFqUGRjVUJOZ0FBRUVnQUFFQWdBUUFBZ1FRQUFBUVNBQUFRU0FBQVFDQUJBQUNCQkFBQUJCSUFBQkJvOG5WUnRPYzVDUFc1cnRodmFuMEFjS3ovdlBkKzYwUG94cVBQUDlmNkVJREJ1UVVBQUlFRUFBQUVFZ0FBRUVnQUFFQWdBUUFBZ1FRQUFBU2FmRlNVNWp3SDUzUE9PTVJ6aEFOc0FBQWdrQUFBZ0VBQ0FBQUNDUUFBQ0NRQUFDQ1FBQUNBUUFJQUFBSUpBQUFJSkFBQUlORGs2NkpvejNOd1B1ZU1RenhIMk04R0FBQUNDUUFBQ0NRQUFDQ1FBQUNBUUFJQUFBSk5yUThBanZYb3o1NXRmUWdBbTJFREFBQ0JKaDhWcFRuUFFhalBkY1VCTmdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRS0RKSjBWb3pYTVE2bk5kY1lnTkFBQUVFZ0FBRUdpeUtLSTl6MEdvejNYRmZqWUFBQkJJQUFCQUlBRUFBSUVFQUFBRUVnQUFFRWdBQUVDZ3lTZEZhTTV6RU9welhYR0FEUUFBQkJJQUFCQklBQUJBSUFFQUFJRUVBQUFFRWdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRS0RKRjBiVG51Y2cxT2U2WXIrcDlRSEFWMy83ZSt0REFJampGZ0FBQkJJQUFCQklBQUJBSUFFQUFJRW1ieFFGMkNBLzJ6bkFCZ0FBQWdrQUFBZ2tBQUFna0FBQWdFQUNnS004OHR5UFd4OENjQ1RYSzhjUUFBQVFTQUJ3Tks4cW9IK3VVNDRsQUFBZ2tBQmdGcTh1b0YrdVQrWVFBQUFRU0FBd20xY1owQi9YSlhOZFBQenNNNzR4bXBOODlmNEhyUThCS0tVODh0eVBXaDhDQTdJQjRHUis2RUI3cmtOT0pRQTRpeDgrMEk3cmozTzRCVUExYmduQU9neCthaEFBVkNjRVlCa0dQelVKQUJZakJLQU9nNThsWER6OEV3RUFBR204Q1JBQUFna0FBQWdrQUFBZ2tBQUFnRUNUZHdBQ1FCNGJBQUFJSkFBQUlKQUFBSUJBQWdBQUFna0FBQWdrQUFBZzBGU0tEd0lDUUJvYkFBQUlKQUFBSUpBQUFJQkFBZ0FBQWszZUF3Z0FlV3dBQUNDUUFBQ0FRQUlBQUFJSkFBQUlKQUFBSUpBQUFJQkFBZ0FBQWdrQUFBZ2tBQUFna0FBQWdFQUNBQUFDQ1FBQUNDUUFBQ0RRVlB3NlFBQ0lZd01BQUlFRUFBQUVFZ0FBRUdqeUZnQUF5R01EQUFDQkJBQUFCQklBQUJCSUFBQkFJQUVBQUlFRUFBQUVFZ0FBRUVnQUFFQWdBUUFBZ1FRQUFBUVNBQUFRU0FBQVFDQUJBQUNCcHVMWEFRSkFIQnNBQUFna0FBQWdrQUFBZ0VDVHR3QUFRQjRiQUFBSUpBQUFJTkJGS2FYY2ZPWXBOd0lBSU1UbGg1OWMyQUFBUUNBQkFBQ0JCQUFBQkJJQUFCQklBQUJBSUFFQUFJRUVBQUFFZXFpVWJ6NFAyUHBBQUlEbFhjMThHd0FBQ0NRQUFDRFFkTytQdmcwWUFGTFlBQUJBb1A4SHdPV0huM29qSUFCczJPNnNuKzc3TCs0Q0FFQUV0d0FBSUpBQUFJQkE5d1hBNVVmZUJ3QUFXL1R0R1c4REFBQ0JCQUFBQkJJQUFCRG9Pd0hnZlFBQXNDM1h6WFliQUFBSUpBQUFJTkMxQWVBMkFBQnN3NE5tdWcwQUFBUVNBQUFRNklFQjREWUFBSXh0M3l5M0FRQ0FRTlArLyt6M0F3UEFGdTNkQUZ4KzlKbmJBQUF3b0VNejNDMEFBQWgwMUN2OG0wOC80VjRBQUF6aTh1UERHM3diQUFBSUpBQUFJTkJSQVhETUtnRUFhTy9ZbVcwREFBQ0JqZzRBV3dBQTZOdWNXVzBEQUFDQlpnV0FMUUFBOUdudWpMWUJBSUJBc3dQQUZnQUErbkxLYkxZQkFJQkFKd1dBTFFBQTlPSFVtV3dEQUFDQlRnNEFXd0FBYU91Y1dYeldCa0FFQUVBYjU4NWd0d0FBSUZDVlYvQTNuLzdoMXpYK0hnRGdzTXVQLzNIMi9MWUJBSUJBMWU3aDMzektGZ0FBbG5iNXlmbXYva3VwR0FDbGxISkRCQURBWXU1V0d2Nmx1QVVBQUpHcUJrRE5NZ0VBN3FrOVk2dHZBRVFBQU5TMXhHeGQ1QmFBQ0FDQU9wYWFxZDREQUFDQkZnc0FXd0FBT00rU3MzVFJEWUFJQUlEVExEMURGNzhGSUFJQVlKNDFacWYzQUFCQW9GVUN3QllBQUk2ejFzeGNiUU1nQWdCZ3Z6Vm41YXEzQUVRQUFGeHY3Um01K25zQVJBQUEzSy9GYkd6eUprQVJBQURmYURVVG13N2lHMC85d0s4UEJpRFczVS8rMld3T04zOGxmdU5KRVFCQW5ydWZ0aHYrcFhUd1BRQ3RUd0FBcksySDJkYzhBRXJwNDBRQXdCcDZtWGxkQkVBcC9ad1FBRmhLVDdPdW13QW9wYThUQXdBMTlUYmp1Z3FBVXZvN1FRQndyaDVuVzNjQlVFcWZKd29BVHRIclRPc3lBRXJwOTRRQndMRjZubVhkQmtBcGZaODRBTmluOXhuV2RRQ1UwdjhKQklCdkcyRjJkWCtBdTN4cklBQTlHMkh3WCtsK0E3QnJwQk1MUUpiUlp0UlFBVkRLZUNjWWdPMGJjVFlOZDhDNzNCSUFvS1VSQi8rVjRUWUF1MFkrOFFDTWJmUVpOSFFBbERMK1B3QUE0OW5DN0JuK0FleHlTd0NBSlcxaDhGL1p6QU81Y3VQSjc0c0FBS3E3KyttL05qVXpOL1ZnZHQxNFFnZ0FjTDY3bjIxcjhGL1o1SVBhSlFRQU9NVldCLytWNGQ4RWVNalcvd0VCcUM5aGRteitBZTZ5RFFCZ240VEJmeVhtZ2U0U0FnRHNTaHI4VitJZThDNGhBSkF0Y2ZCZmlYM2d1NFFBUUpia3dYOGwvZ1RzRWdJQTIyYnczK05FUElBWUFOZ0dRLzk2VHNvQlFnQmdUQWIvZms3T0RHSUFvRytHL3ZHY3FCT0pBWUErR1BxbmNkSXFFQU1BNnpMMHorY0VMa0FRQU5SbDROZm5oSzVBRUFETVkrQXZ6d2x1UkJRQWZNT3diOE5KNzVSQUFMYkNnTy9UZndFWG50TFpLVUdWTWdBQUFBQkpSVTVFcmtKZ2dnPT0iLCAic2l6ZXMiOiAiNTEyeDUxMiIsICJ0eXBlIjogImltYWdlL3BuZyIsICJwdXJwb3NlIjogImFueSBtYXNrYWJsZSJ9XX0=">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Expense Ledger">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAFWUlEQVR4nO3d6Y4UVRgG4JrJ3AJEkMELUVHiRlyIqIDL9bmARhSJmhhkUS9EFk2Gi8Afw+AwzNLVXdWn+nufJ5mfdFefed8+p77pDmvdxLz0xeXHra+B8fz95ZW11tewW9OLOf35JWGnu/fV1WY5XPoTCz2HWXYZlvZkgk8fyyrC6E8i+Cxi7CKM9uCCz5DGKsLgDyr4jGnoIgz6YKc/uyj8jO7e198OlttBHkjwaWGIIqwv+gDCTytDZG+hAgg/rS2awbkLIPxMxSJZnKsAws/UzJvJ3gUQfqZqnmz2uos+/eknws/k3fvmu5lzPfMOIPysij5ZnakAws+qmTWzRxZA+FlVs2R34T+EwSo7tADe/Vl1R2X4wLvlzcvCTx33r+w/Gdo4+J/IP/XtewTavPyx9FPKQZl2E0y05wrg3Z+q9su2HYBozxTAuz/V7c34s1Mg8SfM09no5qWPxJ8Y969+v9Z17gEIpwBEW+86xx/y7GTeDkA0BSDa9hjUAYhQT/4OoAFkWtu8eEH6ieUegGgKQLQN5x+Sbbj/JZkjENE2jEBJZgcgmgIQTQGIpgBEMwYlmh2AaMagRLMDEE0BiKYARDMFIpodgGimQESzAxBNAYjmK5FEswMQzRiUaHYAohmDEs0OQDQFIJoCEE0BiFZ+DPrg2vXWl7DyTl043/oSRlN6BxD+YVRex/XtMWi9n8q/tBa217P973Xon5I7wINrP7W+hJIqrmu5AlT8JU1JtfUtVwDoo/wUiBEUyowdgGgbrS9g2U59+EHrS5i8Bz/UOucfJvDToGmvdwx11jDuK5Fpr3cMldbQPQDRFIBoeWPQtNc7hkJraAcgmgIQLW4M+vDHG60voYA6mbEDEE0BiKYARMsbg7K4QpmxAxBNAYgWNwZlCHUyE/d9gBfPv9v6Eibv4fWfW1/C0jgCES1vCpT2esdQaA3tAERTAKIpANE2Hlc60M0g7fWOodIa2gGIpgBEMwalv0JraAcgmgIQLfDDcGmvdwx11jDuw3B7/XPj19Gf4+T750Z/DubjCEQ0U6CqzzmmQq/HDkA0BSCaAhDNGLTsc46pzuuxAxAt/u8AJ997p/Ul0JAxKP0VWkNHIKIpANH8N6n0VmkNjUGZQ501dAQimgIQzRiU/gqtoR2AaApANAUgmjEoc6izhnEfhvv3l99aXwITkjcFYnGFMuMegGgKQLRyBThx7q3Wl1BatfUtV4Cuq/dLmoqK67q+fUdT7+fEuTcHXah02+vZ/vc69E/JHWCHEgyj8jquvfD2G4WGWtBP6R0AjhL3lUjYzQ5ANAUgWuCnQeF/dgCi+TQo0ewARFMAoikA0RSAaMagRDMFIpojENEUgGgKQDQFIJopENHsAEQzBiWar0QSzRGIaOtbN2+vtb4IaGHr5u01OwDRnvwHGe4EyLRdAPknlCMQ0da7ruu2fr/jRpgoO5m3AxBNAYj2tACOQaTYnfU9/0+wcRBZnnvXP372jBZQ1tatu89k3j0A0Z4rwN6GQBX7ZdsOQLR9C2AXoJqDMm0HINqh7/THz75qIsTK27r1x4E5P/Koc+x1JWB1Pbp9cPi7zhGIcEcW4KgGwVTNkt2ZdgAlYNXMmtmZj0BKwKrok9Ve9wBKwNT1zehcgT722ismQ0zOozt/9s7zXFOgeZ4IxjRvJucegyoBU7FIFhf6O4AS0NqiGVz4D2FKQCtDZG/Q8Lo5ZhmGfNMd9KMQdgPGNnTGRgvssTMv2w0YzKO7f42S1dHfsRWBRYwV/B1LO7IoAn2MHfwdSz+zKwKHWVbwdzS9aVUGum75od9tclMbpaitZdj38x8ngSQ2LhAqNAAAAABJRU5ErkJggg==">
+<link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAFWUlEQVR4nO3d6Y4UVRgG4JrJ3AJEkMELUVHiRlyIqIDL9bmARhSJmhhkUS9EFk2Gi8Afw+AwzNLVXdWn+nufJ5mfdFefed8+p77pDmvdxLz0xeXHra+B8fz95ZW11tewW9OLOf35JWGnu/fV1WY5XPoTCz2HWXYZlvZkgk8fyyrC6E8i+Cxi7CKM9uCCz5DGKsLgDyr4jGnoIgz6YKc/uyj8jO7e198OlttBHkjwaWGIIqwv+gDCTytDZG+hAgg/rS2awbkLIPxMxSJZnKsAws/UzJvJ3gUQfqZqnmz2uos+/eknws/k3fvmu5lzPfMOIPysij5ZnakAws+qmTWzRxZA+FlVs2R34T+EwSo7tADe/Vl1R2X4wLvlzcvCTx33r+w/Gdo4+J/IP/XtewTavPyx9FPKQZl2E0y05wrg3Z+q9su2HYBozxTAuz/V7c34s1Mg8SfM09no5qWPxJ8Y969+v9Z17gEIpwBEW+86xx/y7GTeDkA0BSDa9hjUAYhQT/4OoAFkWtu8eEH6ieUegGgKQLQN5x+Sbbj/JZkjENE2jEBJZgcgmgIQTQGIpgBEMwYlmh2AaMagRLMDEE0BiKYARDMFIpodgGimQESzAxBNAYjmK5FEswMQzRiUaHYAohmDEs0OQDQFIJoCEE0BiFZ+DPrg2vXWl7DyTl043/oSRlN6BxD+YVRex/XtMWi9n8q/tBa217P973Xon5I7wINrP7W+hJIqrmu5AlT8JU1JtfUtVwDoo/wUiBEUyowdgGgbrS9g2U59+EHrS5i8Bz/UOucfJvDToGmvdwx11jDuK5Fpr3cMldbQPQDRFIBoeWPQtNc7hkJraAcgmgIQLW4M+vDHG60voYA6mbEDEE0BiKYARMsbg7K4QpmxAxBNAYgWNwZlCHUyE/d9gBfPv9v6Eibv4fWfW1/C0jgCES1vCpT2esdQaA3tAERTAKIpANE2Hlc60M0g7fWOodIa2gGIpgBEMwalv0JraAcgmgIQLfDDcGmvdwx11jDuw3B7/XPj19Gf4+T750Z/DubjCEQ0U6CqzzmmQq/HDkA0BSCaAhDNGLTsc46pzuuxAxAt/u8AJ997p/Ul0JAxKP0VWkNHIKIpANH8N6n0VmkNjUGZQ501dAQimgIQzRiU/gqtoR2AaApANAUgmjEoc6izhnEfhvv3l99aXwITkjcFYnGFMuMegGgKQLRyBThx7q3Wl1BatfUtV4Cuq/dLmoqK67q+fUdT7+fEuTcHXah02+vZ/vc69E/JHWCHEgyj8jquvfD2G4WGWtBP6R0AjhL3lUjYzQ5ANAUgWuCnQeF/dgCi+TQo0ewARFMAoikA0RSAaMagRDMFIpojENEUgGgKQDQFIJopENHsAEQzBiWar0QSzRGIaOtbN2+vtb4IaGHr5u01OwDRnvwHGe4EyLRdAPknlCMQ0da7ruu2fr/jRpgoO5m3AxBNAYj2tACOQaTYnfU9/0+wcRBZnnvXP372jBZQ1tatu89k3j0A0Z4rwN6GQBX7ZdsOQLR9C2AXoJqDMm0HINqh7/THz75qIsTK27r1x4E5P/Koc+x1JWB1Pbp9cPi7zhGIcEcW4KgGwVTNkt2ZdgAlYNXMmtmZj0BKwKrok9Ve9wBKwNT1zehcgT722ismQ0zOozt/9s7zXFOgeZ4IxjRvJucegyoBU7FIFhf6O4AS0NqiGVz4D2FKQCtDZG/Q8Lo5ZhmGfNMd9KMQdgPGNnTGRgvssTMv2w0YzKO7f42S1dHfsRWBRYwV/B1LO7IoAn2MHfwdSz+zKwKHWVbwdzS9aVUGum75od9tclMbpaitZdj38x8ngSQ2LhAqNAAAAABJRU5ErkJggg==">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<style>
+  :root{
+    --ink:#1B2028;
+    --ink-soft:#5E6672;
+    --line:#E1DED5;
+    --paper:#F5F3EC;
+    --surface:#FFFFFF;
+    --primary:#1F5B57;
+    --primary-dark:#153E3B;
+    --amber:#C98A2C;
+    --diesel:#8A4B24;
+    --food:#3E7D44;
+    --material:#2B5D8A;
+    --payment:#1F5B57;
+    --danger:#B3271F;
+  }
+  html.lang-ar body, html.lang-ar input, html.lang-ar textarea, html.lang-ar select, html.lang-ar button{font-family:'Cairo', sans-serif;}
+  /* Regardless of the interface language, any field where Arabic text is
+     actually typed switches to the Cairo font by itself (and back again
+     if the Arabic text is removed), since Cairo renders Arabic much better
+     than Inter. */
+  input.auto-ar-text, textarea.auto-ar-text{font-family:'Cairo', sans-serif;}
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0; font-family:'Inter',sans-serif; background:var(--paper); color:var(--ink); -webkit-tap-highlight-color:transparent;}
+  button{font-family:inherit; cursor:pointer;}
+  input, textarea, select{font-family:inherit;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+  ::selection{background:rgba(31,91,87,0.18);}
+
+  /* ===== Topbar ===== */
+  .topbar{position:sticky; top:0; z-index:30; background:var(--surface); border-bottom:1px solid var(--line); padding:12px 14px; display:flex; align-items:center; justify-content:space-between; gap:10px;}
+  .brand{display:flex; align-items:center; gap:10px; min-width:0;}
+  .brand-icon{width:38px; height:38px; border-radius:10px; background:linear-gradient(135deg,var(--primary),var(--primary-dark)); display:flex; align-items:center; justify-content:center; flex-shrink:0;}
+  .brand-icon svg{width:20px; height:20px; stroke:#fff;}
+  .brand-text{min-width:0;}
+  .brand-name{font-weight:800; font-size:15.5px; line-height:1.15; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .brand-sub{font-size:11px; color:var(--ink-soft); margin-top:1px;}
+  .balance-pill{display:flex; flex-direction:column; align-items:flex-end; flex-shrink:0;}
+  .balance-pill .lbl{font-size:9.5px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-soft); font-weight:700;}
+  .balance-pill .val{font-family:'JetBrains Mono',monospace; font-weight:700; font-size:15px;}
+  .balance-pill .val.neg{color:var(--danger);}
+  .balance-pill .val.pos{color:var(--primary);}
+  .icon-btn{width:38px; height:38px; border-radius:10px; border:1px solid var(--line); background:var(--surface); display:flex; align-items:center; justify-content:center; flex-shrink:0;}
+  .icon-btn svg{width:18px; height:18px; stroke:var(--ink);}
+
+  /* ===== Tabs ===== */
+  .tabbar{position:sticky; top:63px; z-index:29; background:var(--paper); display:flex; gap:6px; padding:10px 12px 8px; overflow-x:auto; scrollbar-width:none; border-bottom:1px solid var(--line);}
+  .tabbar::-webkit-scrollbar{display:none;}
+  .tab{flex-shrink:0; padding:8px 14px; border-radius:20px; border:1px solid var(--line); background:var(--surface); font-size:13px; font-weight:600; color:var(--ink-soft); white-space:nowrap;}
+  .tab.active{background:var(--ink); border-color:var(--ink); color:#fff;}
+
+  /* ===== Layout ===== */
+  .content{padding:16px 14px 100px; max-width:640px; margin:0 auto;}
+  .view{display:none;}
+  .view.active{display:block;}
+
+  /* ===== Dashboard ===== */
+  .balance-hero{background:linear-gradient(135deg,var(--primary),var(--primary-dark)); border-radius:16px; padding:22px 20px; color:#fff; margin-bottom:16px;}
+  .balance-hero .lbl{font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; opacity:.85; font-weight:700;}
+  .balance-hero .amt{font-family:'JetBrains Mono',monospace; font-weight:700; font-size:34px; margin-top:4px; letter-spacing:-0.01em;}
+  .balance-hero .sub{font-size:12.5px; opacity:.82; margin-top:6px;}
+  .stat-grid{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:16px;}
+  .stat-card{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:13px 14px;}
+  .stat-card .dot{width:9px; height:9px; border-radius:3px; display:inline-block; margin-right:6px;}
+  .stat-card .lbl{font-size:11.5px; color:var(--ink-soft); font-weight:600; display:flex; align-items:center;}
+  .stat-card .amt{font-family:'JetBrains Mono',monospace; font-weight:700; font-size:19px; margin-top:6px;}
+
+  .chart-card{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:16px; margin-bottom:16px;}
+  .chart-card h3{margin:0 0 14px; font-size:13.5px; font-weight:700;}
+  .bar-row{margin-bottom:12px;}
+  .bar-row:last-child{margin-bottom:0;}
+  .bar-row-top{display:flex; justify-content:space-between; font-size:12.5px; margin-bottom:5px;}
+  .bar-row-top .name{font-weight:600; display:flex; align-items:center; gap:6px;}
+  .bar-row-top .val{font-family:'JetBrains Mono',monospace; font-weight:600; color:var(--ink-soft);}
+  .bar-track{height:9px; background:var(--paper); border-radius:5px; overflow:hidden;}
+  .bar-fill{height:100%; border-radius:5px; min-width:3px;}
+
+  .section-title{font-size:13.5px; font-weight:700; margin:20px 0 10px; display:flex; align-items:center; justify-content:space-between;}
+  .section-title .see-all{font-size:12px; font-weight:600; color:var(--primary);}
+
+  /* ===== Entry list ===== */
+  .entry-list{display:flex; flex-direction:column; gap:8px;}
+  .entry-row{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:11px 12px; display:flex; align-items:center; gap:11px;}
+  .entry-thumb{width:44px; height:44px; border-radius:9px; object-fit:cover; flex-shrink:0; background:var(--paper); border:1px solid var(--line);}
+  .entry-thumb-placeholder{width:44px; height:44px; border-radius:9px; flex-shrink:0; display:flex; align-items:center; justify-content:center; color:#fff; flex-shrink:0;}
+  .entry-thumb-placeholder svg{width:19px; height:19px; stroke:#fff;}
+  .entry-mid{flex:1; min-width:0;}
+  .entry-title{font-size:13.5px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .entry-sub{font-size:11.5px; color:var(--ink-soft); margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .entry-amt{font-family:'JetBrains Mono',monospace; font-weight:700; font-size:14.5px; flex-shrink:0;}
+  .entry-amt.in{color:var(--primary);}
+  .entry-amt.out{color:var(--ink);}
+  .empty-note{text-align:center; padding:40px 20px; color:var(--ink-soft); font-size:13.5px;}
+  .empty-note svg{width:40px; height:40px; stroke:var(--line); margin-bottom:10px;}
+
+  /* ===== FAB ===== */
+  .fab{position:fixed; right:18px; bottom:22px; width:58px; height:58px; border-radius:50%; background:var(--primary); border:none; box-shadow:0 6px 18px rgba(31,91,87,.4); display:flex; align-items:center; justify-content:center; z-index:35;}
+  .fab svg{width:26px; height:26px; stroke:#fff;}
+
+  /* ===== Overlay / Sheet ===== */
+  .overlay{position:fixed; inset:0; background:rgba(15,17,20,.45); display:none; align-items:flex-end; z-index:60;}
+  .overlay.open{display:flex;}
+  .sheet{background:var(--surface); width:100%; max-height:92vh; overflow-y:auto; border-radius:18px 18px 0 0; padding:18px 18px calc(18px + env(safe-area-inset-bottom));}
+  .sheet-handle{width:38px; height:4px; border-radius:3px; background:var(--line); margin:0 auto 14px;}
+  .sheet h2{margin:0 0 16px; font-size:18px; font-weight:800;}
+  .field{margin-bottom:14px;}
+  .field label{display:block; font-size:12px; font-weight:700; color:var(--ink-soft); margin-bottom:5px; text-transform:uppercase; letter-spacing:.03em;}
+  .field input, .field textarea, .field select{width:100%; border:1px solid var(--line); border-radius:9px; padding:10px 11px; font-size:14.5px; background:var(--paper); outline:none;}
+  .field input:focus, .field textarea:focus, .field select:focus{border-color:var(--primary); background:#fff;}
+  .field textarea{resize:none; min-height:56px;}
+  .amount-field{position:relative;}
+  .amount-field .cur{position:absolute; left:11px; top:50%; transform:translateY(-50%); font-weight:700; color:var(--ink-soft); font-size:14.5px;}
+  .amount-field input{padding-left:34px; font-family:'JetBrains Mono',monospace; font-weight:700;}
+
+  .bill-capture{border:1.5px dashed var(--line); border-radius:12px; padding:14px; text-align:center; position:relative;}
+  .bill-capture img{max-width:100%; max-height:160px; border-radius:8px; display:block; margin:0 auto;}
+  .bill-capture .add-lbl{display:flex; flex-direction:column; align-items:center; gap:6px; color:var(--ink-soft); font-size:13px; font-weight:600;}
+  .bill-capture .add-lbl svg{width:24px; height:24px; stroke:var(--ink-soft);}
+  .bill-capture .add-lbl small{font-weight:500; font-size:11px; color:var(--ink-soft); opacity:.8;}
+
+  /* ===== Cropper ===== */
+  .cropper-overlay{position:fixed; inset:0; background:#0B0D0F; display:none; z-index:80; flex-direction:column;}
+  .cropper-overlay.open{display:flex;}
+  .cropper-top{display:flex; align-items:center; justify-content:space-between; padding:12px 14px; padding-top:calc(12px + env(safe-area-inset-top)); flex-shrink:0;}
+  .cropper-top .ctitle{color:#fff; font-size:14px; font-weight:700;}
+  .cropper-top .cbtn{background:rgba(255,255,255,.12); border:none; color:#fff; font-size:12.5px; font-weight:600; padding:8px 12px; border-radius:8px;}
+  .cropper-stage{flex:1; position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center; touch-action:none;}
+  .cropper-stage canvas{position:absolute; top:0; left:0;}
+  .crop-handle{position:absolute; width:26px; height:26px; margin:-13px; border-radius:50%; background:#fff; border:2.5px solid var(--primary); box-shadow:0 2px 6px rgba(0,0,0,.35); touch-action:none;}
+  .cropper-bottom{display:flex; gap:10px; padding:14px; padding-bottom:calc(14px + env(safe-area-inset-bottom) + 120px); flex-shrink:0;}
+  .cropper-bottom .btn{flex:1;}
+  .cropper-hint{text-align:center; color:rgba(255,255,255,.65); font-size:11.5px; padding:0 16px 10px;}
+  .crop-spinner-wrap{position:absolute; inset:0; display:none; align-items:center; justify-content:center; background:rgba(11,13,15,.55); z-index:2;}
+  .crop-spinner-wrap.show{display:flex;}
+  .crop-spinner{width:34px; height:34px; border-radius:50%; border:3px solid rgba(255,255,255,.25); border-top-color:#fff; animation:cropspin .8s linear infinite;}
+  @keyframes cropspin{to{transform:rotate(360deg);}}
+  .bill-remove{position:absolute; top:8px; right:8px; width:26px; height:26px; border-radius:50%; background:rgba(0,0,0,.55); border:none; display:flex; align-items:center; justify-content:center;}
+  .bill-remove svg{width:12px; height:12px; stroke:#fff;}
+
+  .sheet-actions{display:flex; gap:10px; margin-top:18px;}
+  .btn{flex:1; padding:12px; border-radius:10px; border:none; font-weight:700; font-size:14px; display:flex; align-items:center; justify-content:center; gap:6px;}
+  .btn-primary{background:var(--primary); color:#fff;}
+  .btn-secondary{background:var(--paper); color:var(--ink); border:1px solid var(--line);}
+  .btn-danger{background:#fff; color:var(--danger); border:1px solid var(--danger);}
+  .btn svg{width:16px; height:16px;}
+  .lang-opt.active{background:var(--primary); color:#fff; border-color:var(--primary);}
+
+  /* ===== Source picker mini-sheet ===== */
+  .mini-sheet{background:var(--surface); width:100%; border-radius:18px 18px 0 0; padding:10px 14px calc(14px + env(safe-area-inset-bottom));}
+  .mini-opt{display:flex; align-items:center; gap:12px; padding:14px 6px; border-bottom:1px solid var(--line); font-size:14.5px; font-weight:600;}
+  .mini-opt:last-child{border-bottom:none;}
+  .mini-opt svg{width:20px; height:20px; stroke:var(--ink);}
+
+  /* ===== Image viewer ===== */
+  .img-viewer{position:fixed; inset:0; background:rgba(0,0,0,.92); display:none; align-items:center; justify-content:center; z-index:80; padding:20px;}
+  .img-viewer.open{display:flex;}
+  .img-viewer img{max-width:100%; max-height:85vh; border-radius:8px;}
+  .img-viewer-close{position:absolute; top:18px; right:18px; width:38px; height:38px; border-radius:50%; background:rgba(255,255,255,.15); border:none; display:flex; align-items:center; justify-content:center;}
+  .img-viewer-close svg{width:18px; height:18px; stroke:#fff;}
+  .img-viewer-share{position:absolute; top:18px; left:18px; height:38px; padding:0 14px; border-radius:19px; background:rgba(255,255,255,.15); border:none; display:flex; align-items:center; gap:7px; color:#fff; font-size:12.5px; font-weight:700;}
+  .img-viewer-share svg{width:16px; height:16px; stroke:#fff;}
+
+  /* ===== Toast ===== */
+  .toast{position:fixed; left:50%; bottom:100px; transform:translateX(-50%) translateY(20px); background:var(--ink); color:#fff; padding:10px 18px; border-radius:30px; font-size:13px; font-weight:600; opacity:0; pointer-events:none; transition:opacity .25s, transform .25s; z-index:90;}
+  .toast.show{opacity:1; transform:translateX(-50%) translateY(0);}
+
+  /* ===== Print statement (built at print time, hidden otherwise) ===== */
+  #printArea{display:none;}
+  .pr-page{background:#fff; padding:0;}
+  .pr-header{border-bottom:2.5px solid var(--primary); padding-bottom:12px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:flex-end;}
+  .pr-header .title{font-size:19px; font-weight:800; color:var(--primary);}
+  .pr-header .sub{font-size:11.5px; color:var(--ink-soft); margin-top:2px;}
+  .pr-header .meta{text-align:right; font-size:11px; color:var(--ink-soft);}
+  .pr-summary{display:grid; grid-template-columns:repeat(5,1fr); gap:8px; margin-bottom:20px;}
+  .pr-summary div{border:1px solid var(--line); border-radius:8px; padding:8px; text-align:center;}
+  .pr-summary .lbl{font-size:9px; text-transform:uppercase; color:var(--ink-soft); font-weight:700;}
+  .pr-summary .val{font-family:'JetBrains Mono',monospace; font-weight:700; font-size:13px; margin-top:3px;}
+  .pr-section-title{font-size:13px; font-weight:800; margin:18px 0 8px; padding-bottom:4px; border-bottom:1px solid var(--ink); text-transform:uppercase; letter-spacing:.03em;}
+  table.pr-table{width:100%; border-collapse:collapse; font-size:11.5px; margin-bottom:6px;}
+  table.pr-table th{text-align:left; font-size:9.5px; text-transform:uppercase; color:var(--ink-soft); border-bottom:1.5px solid var(--ink); padding:5px 6px; font-weight:700;}
+  table.pr-table td{border-bottom:1px solid var(--line); padding:6px; vertical-align:top;}
+  table.pr-table td.amt{font-family:'JetBrains Mono',monospace; text-align:right; white-space:nowrap; font-weight:600;}
+  table.pr-table tfoot td{border-top:1.5px solid var(--ink); border-bottom:none; font-weight:700; font-family:'JetBrains Mono',monospace;}
+  .bill-yes{color:var(--primary); font-weight:700; text-align:center;}
+
+  /* ===== One full page per bill photo ===== */
+  .pr-bill-page{page-break-inside:avoid; break-inside:avoid; margin-top:18px;}
+  .pr-bill-header{border-bottom:2px solid var(--primary); padding-bottom:10px; margin-bottom:14px;}
+  .pr-bill-title{font-size:16px; font-weight:800; color:var(--primary);}
+  .pr-bill-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:7px 18px; margin-top:10px;}
+  .pr-bill-grid .k{font-size:9px; text-transform:uppercase; letter-spacing:.03em; color:var(--ink-soft); font-weight:700;}
+  .pr-bill-grid .v{font-size:12.5px; font-weight:600; margin-top:2px;}
+  .pr-bill-image-wrap{height:160mm; display:flex; align-items:center; justify-content:center; margin-top:6px;}
+  .pr-bill-image-wrap img{max-width:100%; max-height:100%; object-fit:contain; border:1px solid var(--line); border-radius:6px;}
+
+  @media print{
+    @page{ size:A4; margin:12mm; }
+    *{ -webkit-print-color-adjust:exact !important; print-color-adjust:exact !important; }
+    body{background:#fff;}
+    .topbar, .tabbar, .content, .fab, .overlay, .img-viewer, .toast{display:none !important;}
+    #printArea{display:block !important;}
+  }
+
+  @media (min-width:700px){
+    .content{padding-top:22px;}
+    .overlay{align-items:center; justify-content:center;}
+    .sheet, .mini-sheet{max-width:460px; border-radius:18px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">
+    <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h18M6 15h3M3 6h18v13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6z"/></svg></div>
+    <div class="brand-text">
+      <div class="brand-name" id="brandName" data-i18n="appName">Expense Ledger</div>
+      <div class="brand-sub" id="brandSub" data-i18n="appSub">Site purchases &amp; fund tracking</div>
+    </div>
+  </div>
+  <div style="display:flex; align-items:center; gap:8px;">
+    <div class="balance-pill">
+      <div class="lbl" data-i18n="balanceLbl">Balance</div>
+      <div class="val mono" id="topBalance">Rs 0</div>
+    </div>
+    <button class="icon-btn" id="btnSettings"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></button>
+  </div>
+</div>
+
+<div class="tabbar" id="tabbar">
+  <button class="tab active" data-view="dashboard" data-i18n="tabDashboard">Dashboard</button>
+  <button class="tab" data-view="diesel" data-i18n="tabDiesel">Diesel</button>
+  <button class="tab" data-view="food" data-i18n="tabFood">Food</button>
+  <button class="tab" data-view="material" data-i18n="tabMaterial">Material</button>
+  <button class="tab" data-view="payment" data-i18n="tabPayments">Payments</button>
+  <button class="tab" data-view="bills" data-i18n="tabBills">All Bills</button>
+</div>
+
+<div class="content">
+
+  <!-- Dashboard -->
+  <div class="view active" id="viewDashboard">
+    <div class="balance-hero">
+      <div class="lbl" data-i18n="currentBalance">Current Balance</div>
+      <div class="amt mono" id="heroBalance">Rs 0</div>
+      <div class="sub" id="heroSub">Rs 0 received &middot; Rs 0 spent</div>
+    </div>
+    <div class="stat-grid">
+      <div class="stat-card"><div class="lbl"><span class="dot" style="background:var(--diesel)"></span><span data-i18n="typeDiesel">Diesel</span></div><div class="amt mono" id="statDiesel">Rs 0</div></div>
+      <div class="stat-card"><div class="lbl"><span class="dot" style="background:var(--food)"></span><span data-i18n="typeFood">Food</span></div><div class="amt mono" id="statFood">Rs 0</div></div>
+      <div class="stat-card"><div class="lbl"><span class="dot" style="background:var(--material)"></span><span data-i18n="typeMaterial">Material</span></div><div class="amt mono" id="statMaterial">Rs 0</div></div>
+      <div class="stat-card"><div class="lbl"><span class="dot" style="background:var(--payment)"></span><span data-i18n="receivedLbl">Received</span></div><div class="amt mono" id="statPayment">Rs 0</div></div>
+    </div>
+    <div class="chart-card">
+      <h3 data-i18n="spendingBreakdown">Spending breakdown</h3>
+      <div id="chartRows"></div>
+    </div>
+    <div class="section-title"><span data-i18n="recentActivity">Recent activity</span><span class="see-all" data-jump="bills" data-i18n="seeAll">See all</span></div>
+    <div class="entry-list" id="recentList"></div>
+  </div>
+
+  <!-- Diesel -->
+  <div class="view" id="viewDiesel">
+    <div class="chart-card" id="vehicleSummaryCard" style="display:none;">
+      <h3 data-i18n="byVehicle">Fuel used by vehicle</h3>
+      <div id="vehicleRows"></div>
+    </div>
+    <div class="section-title" data-i18n="dieselPurchases">Fuel purchases</div>
+    <div class="entry-list" id="dieselList"></div>
+  </div>
+
+  <!-- Food -->
+  <div class="view" id="viewFood">
+    <div class="section-title" data-i18n="foodExpenses">Food expenses</div>
+    <div class="entry-list" id="foodList"></div>
+  </div>
+
+  <!-- Material -->
+  <div class="view" id="viewMaterial">
+    <div class="section-title" data-i18n="materialPurchases">Material purchases</div>
+    <div class="entry-list" id="materialList"></div>
+  </div>
+
+  <!-- Payments -->
+  <div class="view" id="viewPayment">
+    <div class="section-title" data-i18n="paymentsReceived">Payments received</div>
+    <div class="entry-list" id="paymentList"></div>
+  </div>
+
+  <!-- All bills -->
+  <div class="view" id="viewBills">
+    <div class="section-title"><span data-i18n="allEntries">All entries</span>
+      <span class="see-all" id="btnExportPdf" style="display:flex; align-items:center; gap:4px;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width:14px;height:14px;"><path d="M6 9V2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-2"/><path d="M6 14h3"/></svg>
+        <span data-i18n="exportPdf">Export / Share PDF</span>
+      </span>
+    </div>
+    <div class="entry-list" id="billsList"></div>
+  </div>
+
+</div>
+
+<button class="fab" id="btnAddEntry"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+
+<!-- Add / edit entry sheet -->
+<div class="overlay" id="entrySheetOverlay">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <h2 id="sheetTitle">Add Diesel</h2>
+
+    <div class="field">
+      <label data-i18n="fieldType">Type</label>
+      <select id="fType">
+        <option value="diesel" data-i18n="typeDiesel">Diesel</option>
+        <option value="food" data-i18n="typeFood">Food</option>
+        <option value="material" data-i18n="typeMaterial">Material</option>
+        <option value="payment" data-i18n="typePayment">Payment Received</option>
+      </select>
+    </div>
+    <div class="field">
+      <label data-i18n="fieldDate">Date</label>
+      <input type="date" id="fDate">
+    </div>
+    <div class="field amount-field">
+      <label data-i18n="fieldAmount">Amount</label>
+      <span class="cur">Rs</span>
+      <input type="number" inputmode="decimal" id="fAmount" placeholder="0">
+    </div>
+    <div class="field" id="fPaymentMethodWrap" style="display:none;">
+      <label data-i18n="fieldMethod">Payment Method</label>
+      <select id="fPaymentMethod">
+        <option value="cash" data-i18n="methodCash">Cash</option>
+        <option value="bank" data-i18n="methodBank">Bank Transfer</option>
+        <option value="other" data-i18n="methodOther">Other Person</option>
+      </select>
+    </div>
+    <div class="field" id="fPersonNameWrap" style="display:none;">
+      <label data-i18n="fieldPersonName">Person's Name</label>
+      <input type="text" id="fPersonName" data-i18n-placeholder="personNamePh" placeholder="e.g. Bilal Ahmed">
+    </div>
+    <div class="field" id="fFuelTypeWrap" style="display:none;">
+      <label data-i18n="fieldFuelType">Fuel Type</label>
+      <select id="fFuelType">
+        <option value="diesel" data-i18n="fuelDiesel">Diesel</option>
+        <option value="petrol" data-i18n="fuelPetrol">Petrol</option>
+      </select>
+    </div>
+    <div class="field" id="fVehicleNameWrap" style="display:none;">
+      <label data-i18n="fieldVehicleName">Vehicle Name</label>
+      <input type="text" id="fVehicleName" data-i18n-placeholder="vehicleNamePh" placeholder="e.g. Hilux">
+    </div>
+    <div class="field" id="fPlateNumberWrap" style="display:none;">
+      <label data-i18n="fieldPlateNumber">Number Plate</label>
+      <input type="text" id="fPlateNumber" data-i18n-placeholder="platePh" placeholder="e.g. LEA-1234">
+    </div>
+    <div class="field" id="fLitersWrap" style="display:none;">
+      <label data-i18n="fieldLiters">Liters (optional)</label>
+      <input type="number" inputmode="decimal" id="fLiters" data-i18n-placeholder="litersPh" placeholder="e.g. 40">
+    </div>
+    <div class="field" id="fDescWrap">
+      <label id="fDescLabel">Description</label>
+      <input type="text" id="fDesc" data-i18n-placeholder="descPhDefault" placeholder="e.g. 5mm binding wire">
+    </div>
+    <div class="field" id="fSiteWrap">
+      <label data-i18n="fieldSite">Site</label>
+      <input type="text" id="fSite" data-i18n-placeholder="sitePh" placeholder="e.g. Al Noor Tower, DHA">
+    </div>
+    <div class="field">
+      <label data-i18n="fieldNote">Note (optional)</label>
+      <textarea id="fNote" data-i18n-placeholder="notePh" placeholder="Any extra detail..."></textarea>
+    </div>
+    <div class="field">
+      <label data-i18n="fieldBill">Bill / Receipt Photo</label>
+      <div class="bill-capture" id="billCapture">
+        <img id="billImg" style="display:none;">
+        <div class="add-lbl" id="billAddLbl">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <span data-i18n="tapToScan">Tap to scan / add bill photo</span>
+          <small data-i18n="tapToScanSub">Photo, camera scan, or PDF</small>
+        </div>
+        <button type="button" class="bill-remove" id="billRemove" style="display:none;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+      </div>
+    </div>
+
+    <div class="sheet-actions">
+      <button class="btn btn-danger" id="btnDeleteEntry" style="display:none;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2m3 0v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6"/></svg>
+        <span data-i18n="btnDelete">Delete</span>
+      </button>
+      <button class="btn btn-secondary" id="btnCancelEntry" data-i18n="btnCancel">Cancel</button>
+      <button class="btn btn-primary" id="btnSaveEntry" data-i18n="btnSave">Save</button>
+    </div>
+  </div>
+</div>
+
+<!-- Photo source picker -->
+<div class="overlay" id="sourceOverlay">
+  <div class="mini-sheet">
+    <div class="sheet-handle"></div>
+    <button type="button" class="mini-opt" id="srcCamera" style="width:100%; background:none; border:none; text-align:left;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+      <span data-i18n="takePhoto">Take Photo</span>
+    </button>
+    <button type="button" class="mini-opt" id="srcGallery" style="width:100%; background:none; border:none; text-align:left;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+      <span data-i18n="chooseGallery">Choose from Gallery</span>
+    </button>
+    <button type="button" class="mini-opt" id="srcPdf" style="width:100%; background:none; border:none; text-align:left;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+      <span data-i18n="importPdf">Import PDF (auto-converts to image)</span>
+    </button>
+  </div>
+</div>
+
+<!-- Settings -->
+<div class="overlay" id="settingsOverlay">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <h2 data-i18n="settingsTitle">Settings</h2>
+    <div class="field">
+      <label data-i18n="yourName">Your Name</label>
+      <input type="text" id="setYourName" placeholder="e.g. Aamir Jalil">
+    </div>
+    <div class="field">
+      <label data-i18n="companyName">Company Name</label>
+      <input type="text" id="setCompanyName" placeholder="e.g. Wiqayah Fire Safety">
+    </div>
+    <div class="field">
+      <label data-i18n="currencyLabel">Currency Symbol</label>
+      <input type="text" id="setCurrency" placeholder="Rs" maxlength="6">
+    </div>
+    <div class="field">
+      <label data-i18n="languageLabel">Language</label>
+      <div style="display:flex; gap:8px;">
+        <button type="button" class="btn btn-secondary lang-opt" id="btnLangEn" data-lang="en" style="flex:1;">English</button>
+        <button type="button" class="btn btn-secondary lang-opt" id="btnLangAr" data-lang="ar" style="flex:1;">العربية</button>
+      </div>
+    </div>
+    <div class="sheet-actions">
+      <button class="btn btn-secondary" id="btnCloseSettings" data-i18n="btnClose">Close</button>
+      <button class="btn btn-primary" id="btnSaveSettings" data-i18n="btnSave">Save</button>
+    </div>
+  </div>
+</div>
+
+<div class="img-viewer" id="imgViewer">
+  <button class="img-viewer-share" id="btnShareBillPdf">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><path d="M16 6l-4-4-4 4"/><path d="M12 2v14"/></svg>
+    <span data-i18n="saveShareBillPdf">Save / Share as PDF</span>
+  </button>
+  <button class="img-viewer-close" id="btnCloseViewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <img id="viewerImg">
+</div>
+
+<!-- Document Cropper -->
+<div class="cropper-overlay" id="cropperOverlay">
+  <div class="cropper-top">
+    <span class="ctitle" data-i18n="cropTitle">Adjust bill edges</span>
+    <button type="button" class="cbtn" id="btnCropAuto" data-i18n="cropAuto">Auto</button>
+  </div>
+  <div class="cropper-stage" id="cropperStage">
+    <canvas id="cropCanvas"></canvas>
+    <svg id="cropQuadSvg" style="position:absolute; top:0; left:0; pointer-events:none;"></svg>
+    <div class="crop-handle" id="cropH0" style="pointer-events:auto;"></div>
+    <div class="crop-handle" id="cropH1" style="pointer-events:auto;"></div>
+    <div class="crop-handle" id="cropH2" style="pointer-events:auto;"></div>
+    <div class="crop-handle" id="cropH3" style="pointer-events:auto;"></div>
+    <div class="crop-spinner-wrap" id="cropSpinner"><div class="crop-spinner"></div></div>
+  </div>
+  <div class="cropper-hint" data-i18n="cropHint">Drag the corners to match the bill's edges</div>
+  <div class="cropper-bottom">
+    <button class="btn btn-secondary" id="btnCropCancel" data-i18n="btnCancel">Cancel</button>
+    <button class="btn btn-primary" id="btnCropConfirm" data-i18n="cropConfirm">Crop &amp; Use</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<!-- Printable statement, populated just before printing -->
+<div id="printArea"></div>
+
+<script>
+if(window['pdfjsLib']){
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+}
+/* ======================= Storage (IndexedDB) ======================= */
+const DB_NAME = 'expenseLedgerDB', DB_VERSION = 1, STORE = 'entries';
+let dbInstance = null;
+function openDb(){
+  return new Promise((resolve, reject)=>{
+    if(dbInstance){ resolve(dbInstance); return; }
+    const req = indexedDB.open(DB_NAME, DB_VERSION);
+    req.onupgradeneeded = ()=>{
+      const db = req.result;
+      if(!db.objectStoreNames.contains(STORE)) db.createObjectStore(STORE, {keyPath:'id'});
+    };
+    req.onsuccess = ()=>{ dbInstance = req.result; resolve(dbInstance); };
+    req.onerror = ()=> reject(req.error);
+  });
+}
+async function dbPut(entry){
+  const db = await openDb();
+  return new Promise((resolve, reject)=>{
+    const tx = db.transaction(STORE, 'readwrite');
+    tx.objectStore(STORE).put(entry);
+    tx.oncomplete = ()=> resolve();
+    tx.onerror = ()=> reject(tx.error);
+  });
+}
+async function dbDelete(id){
+  const db = await openDb();
+  return new Promise((resolve, reject)=>{
+    const tx = db.transaction(STORE, 'readwrite');
+    tx.objectStore(STORE).delete(id);
+    tx.oncomplete = ()=> resolve();
+    tx.onerror = ()=> reject(tx.error);
+  });
+}
+async function dbGetAll(){
+  const db = await openDb();
+  return new Promise((resolve, reject)=>{
+    const tx = db.transaction(STORE, 'readonly');
+    const req = tx.objectStore(STORE).getAll();
+    req.onsuccess = ()=> resolve(req.result || []);
+    req.onerror = ()=> reject(req.error);
+  });
+}
+
+/* ======================= Settings (localStorage) ======================= */
+function loadSettings(){
+  try{ return JSON.parse(localStorage.getItem('expenseLedgerSettings') || '{}'); }
+  catch(e){ return {}; }
+}
+function saveSettings(s){ localStorage.setItem('expenseLedgerSettings', JSON.stringify(s)); }
+let settings = Object.assign({yourName:'', companyName:'', lang:'en', currency:'Rs'}, loadSettings());
+
+function cur(){ return settings.currency || 'Rs'; }
+function fmt(n){
+  const v = Number(n)||0;
+  return cur() + ' ' + v.toLocaleString('en-US', {minimumFractionDigits:0, maximumFractionDigits:0});
+}
+
+/* ======================= Language / Translations ======================= */
+const TRANSLATIONS = {
+  en: {
+    appName:'Expense Ledger', appSub:'Site purchases & fund tracking', appSubCompany:'Fund tracking \u00b7 {company}',
+    tabDashboard:'Dashboard', tabDiesel:'Fuel', tabFood:'Food', tabMaterial:'Material', tabPayments:'Payments', tabBills:'All Bills',
+    balanceLbl:'Balance', currentBalance:'Current Balance', receivedSpent:'{received} received \u00b7 {spent} spent',
+    typeDiesel:'Fuel', typeFood:'Food', typeMaterial:'Material', typePayment:'Payment Received', receivedLbl:'Received',
+    spendingBreakdown:'Spending breakdown', recentActivity:'Recent activity', seeAll:'See all',
+    dieselPurchases:'Fuel purchases', foodExpenses:'Food expenses', materialPurchases:'Material purchases', paymentsReceived:'Payments received',
+    allEntries:'All entries', exportPdf:'Export / Share PDF', byVehicle:'Fuel used by vehicle',
+    fieldType:'Type', fieldDate:'Date', fieldAmount:'Amount', fieldMethod:'Payment Method',
+    methodCash:'Cash', methodBank:'Bank Transfer', methodOther:'Other Person',
+    fieldPersonName:"Person's Name", personNamePh:'e.g. Bilal Ahmed',
+    fieldFuelType:'Fuel Type', fuelDiesel:'Diesel', fuelPetrol:'Petrol',
+    fieldVehicleName:'Vehicle Name', vehicleNamePh:'e.g. Hilux',
+    fieldPlateNumber:'Number Plate', platePh:'e.g. LEA-1234',
+    fieldLiters:'Liters (optional)', litersPh:'e.g. 40',
+    fieldSite:'Site', sitePh:'e.g. Al Noor Tower, DHA',
+    fieldDescriptionGeneric:'Description', fieldMaterialDesc:'Material Description',
+    fieldNote:'Note (optional)', notePh:'Any extra detail...',
+    fieldBill:'Bill / Receipt Photo', tapToScan:'Tap to scan / add bill photo',
+    tapToScanSub:'Photo, camera scan, or PDF',
+    btnDelete:'Delete', btnCancel:'Cancel', btnSave:'Save', btnClose:'Close',
+    takePhoto:'Take Photo', chooseGallery:'Choose from Gallery', importPdf:'Import PDF (auto-converts to image)',
+    cropTitle:'Adjust bill edges', cropAuto:'Auto', cropHint:'Drag the corners to match the bill\u2019s edges', cropConfirm:'Crop & Use',
+    saveShareBillPdf:'Save / Share as PDF', toastPdfConverted:'PDF converted to HD image', toastCouldNotReadPdf:'Could not read PDF file',
+    toastPdfCreated:'Bill PDF ready', toastPdfFailed:'Could not create PDF',
+    settingsTitle:'Settings', yourName:'Your Name', companyName:'Company Name', currencyLabel:'Currency Symbol', languageLabel:'Language',
+    descPhDefault:'e.g. 5mm binding wire', noEntriesYet:'No entries yet',
+    addPrefix:'Add ', editPrefix:'Edit ',
+    toastEnterAmount:'Enter a valid amount', toastSaved:'Saved', toastDeleted:'Deleted',
+    toastSettingsSaved:'Settings saved', toastCouldNotRead:'Could not read image',
+    confirmDeleteEntry:'Delete this entry?',
+    printTitle:'Expense Statement', printDefaultName:'Site Expenses', printGenerated:'Generated',
+    colDate:'Date', colRef:'Reference / Note', colVehicle:'Vehicle', colPlate:'Plate', colFuelType:'Fuel',
+    colLiters:'Liters', colDescription:'Description', colSite:'Site', colAmount:'Amount', colTotal:'Total', colBill:'Bill', colMethod:'Method'
+  },
+  ar: {
+    appName:'\u062f\u0641\u062a\u0631 \u0627\u0644\u0645\u0635\u0631\u0648\u0641\u0627\u062a', appSub:'\u0645\u0634\u062a\u0631\u064a\u0627\u062a \u0627\u0644\u0645\u0648\u0642\u0639 \u0648\u062a\u062a\u0628\u0639 \u0627\u0644\u0623\u0645\u0648\u0627\u0644', appSubCompany:'\u062a\u062a\u0628\u0639 \u0627\u0644\u0623\u0645\u0648\u0627\u0644 \u00b7 {company}',
+    tabDashboard:'\u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629', tabDiesel:'\u0627\u0644\u0648\u0642\u0648\u062f', tabFood:'\u0627\u0644\u0637\u0639\u0627\u0645', tabMaterial:'\u0627\u0644\u0645\u0648\u0627\u062f', tabPayments:'\u0627\u0644\u062f\u0641\u0639\u0627\u062a', tabBills:'\u0643\u0644 \u0627\u0644\u0641\u0648\u0627\u062a\u064a\u0631',
+    balanceLbl:'\u0627\u0644\u0631\u0635\u064a\u062f', currentBalance:'\u0627\u0644\u0631\u0635\u064a\u062f \u0627\u0644\u062d\u0627\u0644\u064a', receivedSpent:'{received} \u0645\u0633\u062a\u0644\u0645 \u00b7 {spent} \u0645\u0646\u0641\u0642',
+    typeDiesel:'\u0648\u0642\u0648\u062f', typeFood:'\u0637\u0639\u0627\u0645', typeMaterial:'\u0645\u0648\u0627\u062f', typePayment:'\u062f\u0641\u0639\u0629 \u0645\u0633\u062a\u0644\u0645\u0629', receivedLbl:'\u0627\u0644\u0645\u0633\u062a\u0644\u0645',
+    spendingBreakdown:'\u062a\u0641\u0635\u064a\u0644 \u0627\u0644\u0645\u0635\u0631\u0648\u0641\u0627\u062a', recentActivity:'\u0627\u0644\u0646\u0634\u0627\u0637 \u0627\u0644\u0623\u062e\u064a\u0631', seeAll:'\u0639\u0631\u0636 \u0627\u0644\u0643\u0644',
+    dieselPurchases:'\u0645\u0634\u062a\u0631\u064a\u0627\u062a \u0627\u0644\u0648\u0642\u0648\u062f', foodExpenses:'\u0645\u0635\u0631\u0648\u0641\u0627\u062a \u0627\u0644\u0637\u0639\u0627\u0645', materialPurchases:'\u0645\u0634\u062a\u0631\u064a\u0627\u062a \u0627\u0644\u0645\u0648\u0627\u062f', paymentsReceived:'\u0627\u0644\u062f\u0641\u0639\u0627\u062a \u0627\u0644\u0645\u0633\u062a\u0644\u0645\u0629',
+    allEntries:'\u0643\u0644 \u0627\u0644\u0633\u062c\u0644\u0627\u062a', exportPdf:'\u062a\u0635\u062f\u064a\u0631 / \u0645\u0634\u0627\u0631\u0643\u0629 PDF', byVehicle:'\u0627\u0644\u0648\u0642\u0648\u062f \u0627\u0644\u0645\u0633\u062a\u062e\u062f\u0645 \u062d\u0633\u0628 \u0627\u0644\u0645\u0631\u0643\u0628\u0629',
+    fieldType:'\u0627\u0644\u0646\u0648\u0639', fieldDate:'\u0627\u0644\u062a\u0627\u0631\u064a\u062e', fieldAmount:'\u0627\u0644\u0645\u0628\u0644\u063a', fieldMethod:'\u0637\u0631\u064a\u0642\u0629 \u0627\u0644\u062f\u0641\u0639',
+    methodCash:'\u0646\u0642\u062f\u0627\u064b', methodBank:'\u062a\u062d\u0648\u064a\u0644 \u0628\u0646\u0643\u064a', methodOther:'\u0634\u062e\u0635 \u0622\u062e\u0631',
+    fieldPersonName:'\u0627\u0633\u0645 \u0627\u0644\u0634\u062e\u0635', personNamePh:'\u0645\u062b\u0627\u0644: \u0628\u0644\u0627\u0644 \u0623\u062d\u0645\u062f',
+    fieldFuelType:'\u0646\u0648\u0639 \u0627\u0644\u0648\u0642\u0648\u062f', fuelDiesel:'\u062f\u064a\u0632\u0644', fuelPetrol:'\u0628\u0646\u0632\u064a\u0646',
+    fieldVehicleName:'\u0627\u0633\u0645 \u0627\u0644\u0645\u0631\u0643\u0628\u0629', vehicleNamePh:'\u0645\u062b\u0627\u0644: \u0647\u0627\u064a\u0644\u0648\u0643\u0633',
+    fieldPlateNumber:'\u0631\u0642\u0645 \u0627\u0644\u0644\u0648\u062d\u0629', platePh:'\u0645\u062b\u0627\u0644: LEA-1234',
+    fieldLiters:'\u0627\u0644\u0644\u062a\u0631\u0627\u062a (\u0627\u062e\u062a\u064a\u0627\u0631\u064a)', litersPh:'\u0645\u062b\u0627\u0644: 40',
+    fieldSite:'\u0627\u0644\u0645\u0648\u0642\u0639', sitePh:'\u0645\u062b\u0627\u0644: \u0628\u0631\u062c \u0627\u0644\u0646\u0648\u0631',
+    fieldDescriptionGeneric:'\u0627\u0644\u0648\u0635\u0641', fieldMaterialDesc:'\u0648\u0635\u0641 \u0627\u0644\u0645\u0627\u062f\u0629',
+    fieldNote:'\u0645\u0644\u0627\u062d\u0638\u0629 (\u0627\u062e\u062a\u064a\u0627\u0631\u064a\u0629)', notePh:'\u0623\u064a \u062a\u0641\u0627\u0635\u064a\u0644 \u0625\u0636\u0627\u0641\u064a\u0629...',
+    fieldBill:'\u0635\u0648\u0631\u0629 \u0627\u0644\u0641\u0627\u062a\u0648\u0631\u0629', tapToScan:'\u0627\u0636\u063a\u0637 \u0644\u0645\u0633\u062d/\u0625\u0636\u0627\u0641\u0629 \u0635\u0648\u0631\u0629 \u0627\u0644\u0641\u0627\u062a\u0648\u0631\u0629',
+    tapToScanSub:'\u0635\u0648\u0631\u0629\u060c \u0645\u0633\u062d \u0628\u0627\u0644\u0643\u0627\u0645\u064a\u0631\u0627\u060c \u0623\u0648 PDF',
+    btnDelete:'\u062d\u0630\u0641', btnCancel:'\u0625\u0644\u063a\u0627\u0621', btnSave:'\u062d\u0641\u0638', btnClose:'\u0625\u063a\u0644\u0627\u0642',
+    takePhoto:'\u0627\u0644\u062a\u0642\u0627\u0637 \u0635\u0648\u0631\u0629', chooseGallery:'\u0627\u062e\u062a\u064a\u0627\u0631 \u0645\u0646 \u0627\u0644\u0645\u0639\u0631\u0636', importPdf:'\u0627\u0633\u062a\u064a\u0631\u0627\u062f PDF (\u064a\u062d\u0648\u0644 \u062a\u0644\u0642\u0627\u0626\u064a\u0627\u064b \u0625\u0644\u0649 \u0635\u0648\u0631\u0629)',
+    cropTitle:'\u0627\u0636\u0628\u0637 \u062d\u0648\u0627\u0641 \u0627\u0644\u0641\u0627\u062a\u0648\u0631\u0629', cropAuto:'\u062a\u0644\u0642\u0627\u0626\u064a', cropHint:'\u0627\u0633\u062d\u0628 \u0627\u0644\u0632\u0648\u0627\u064a\u0627 \u0644\u0645\u0637\u0627\u0628\u0642\u0629 \u062d\u0648\u0627\u0641 \u0627\u0644\u0641\u0627\u062a\u0648\u0631\u0629', cropConfirm:'\u0642\u0635 \u0648\u0627\u0633\u062a\u062e\u062f\u0645',
+    saveShareBillPdf:'\u062d\u0641\u0638 / \u0645\u0634\u0627\u0631\u0643\u0629 \u0643\u0640 PDF', toastPdfConverted:'\u062a\u0645 \u062a\u062d\u0648\u064a\u0644 \u0645\u0644\u0641 PDF \u0625\u0644\u0649 \u0635\u0648\u0631\u0629 \u0639\u0627\u0644\u064a\u0629 \u0627\u0644\u062f\u0642\u0629', toastCouldNotReadPdf:'\u062a\u0639\u0630\u0631 \u0642\u0631\u0627\u0621\u0629 \u0645\u0644\u0641 PDF',
+    toastPdfCreated:'\u0645\u0644\u0641 PDF \u0644\u0644\u0641\u0627\u062a\u0648\u0631\u0629 \u062c\u0627\u0647\u0632', toastPdfFailed:'\u062a\u0639\u0630\u0631 \u0625\u0646\u0634\u0627\u0621 \u0645\u0644\u0641 PDF',
+    settingsTitle:'\u0627\u0644\u0625\u0639\u062f\u0627\u062f\u0627\u062a', yourName:'\u0627\u0633\u0645\u0643', companyName:'\u0627\u0633\u0645 \u0627\u0644\u0634\u0631\u0643\u0629', currencyLabel:'\u0631\u0645\u0632 \u0627\u0644\u0639\u0645\u0644\u0629', languageLabel:'\u0627\u0644\u0644\u063a\u0629',
+    descPhDefault:'\u0645\u062b\u0627\u0644: \u0633\u0644\u0643 \u0631\u0628\u0637 5 \u0645\u0645', noEntriesYet:'\u0644\u0627 \u062a\u0648\u062c\u062f \u0633\u062c\u0644\u0627\u062a \u0628\u0639\u062f',
+    addPrefix:'\u0625\u0636\u0627\u0641\u0629 ', editPrefix:'\u062a\u0639\u062f\u064a\u0644 ',
+    toastEnterAmount:'\u0623\u062f\u062e\u0644 \u0645\u0628\u0644\u063a\u0627\u064b \u0635\u062d\u064a\u062d\u0627\u064b', toastSaved:'\u062a\u0645 \u0627\u0644\u062d\u0641\u0638', toastDeleted:'\u062a\u0645 \u0627\u0644\u062d\u0630\u0641',
+    toastSettingsSaved:'\u062a\u0645 \u062d\u0641\u0638 \u0627\u0644\u0625\u0639\u062f\u0627\u062f\u0627\u062a', toastCouldNotRead:'\u062a\u0639\u0630\u0631 \u0642\u0631\u0627\u0621\u0629 \u0627\u0644\u0635\u0648\u0631\u0629',
+    confirmDeleteEntry:'\u062d\u0630\u0641 \u0647\u0630\u0627 \u0627\u0644\u0633\u062c\u0644\u061f',
+    printTitle:'\u0643\u0634\u0641 \u062d\u0633\u0627\u0628 \u0627\u0644\u0645\u0635\u0631\u0648\u0641\u0627\u062a', printDefaultName:'\u0645\u0635\u0631\u0648\u0641\u0627\u062a \u0627\u0644\u0645\u0648\u0642\u0639', printGenerated:'\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0625\u0646\u0634\u0627\u0621',
+    colDate:'\u0627\u0644\u062a\u0627\u0631\u064a\u062e', colRef:'\u0627\u0644\u0645\u0631\u062c\u0639/\u0645\u0644\u0627\u062d\u0638\u0629', colVehicle:'\u0627\u0644\u0645\u0631\u0643\u0628\u0629', colPlate:'\u0627\u0644\u0644\u0648\u062d\u0629', colFuelType:'\u0627\u0644\u0646\u0648\u0639',
+    colLiters:'\u0627\u0644\u0644\u062a\u0631\u0627\u062a', colDescription:'\u0627\u0644\u0648\u0635\u0641', colSite:'\u0627\u0644\u0645\u0648\u0642\u0639', colAmount:'\u0627\u0644\u0645\u0628\u0644\u063a', colTotal:'\u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a', colBill:'\u0627\u0644\u0641\u0627\u062a\u0648\u0631\u0629', colMethod:'\u0627\u0644\u0637\u0631\u064a\u0642\u0629'
+  }
+};
+function lang(){ return settings.lang === 'ar' ? 'ar' : 'en'; }
+function t(key, vars){
+  let s = (TRANSLATIONS[lang()] && TRANSLATIONS[lang()][key]) || TRANSLATIONS.en[key] || key;
+  if(vars) Object.keys(vars).forEach(k=> s = s.replace('{'+k+'}', vars[k]));
+  return s;
+}
+function applyTranslations(){
+  document.documentElement.lang = lang();
+  document.documentElement.dir = lang()==='ar' ? 'rtl' : 'ltr';
+  document.documentElement.classList.toggle('lang-ar', lang()==='ar');
+  document.querySelectorAll('[data-i18n]').forEach(el=>{ el.textContent = t(el.dataset.i18n); });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{ el.placeholder = t(el.dataset.i18nPlaceholder); });
+  document.getElementById('btnLangEn').classList.toggle('active', lang()==='en');
+  document.getElementById('btnLangAr').classList.toggle('active', lang()==='ar');
+}
+
+/* ======================= State ======================= */
+let allEntries = [];
+let editingId = null;
+let pendingBillDataUrl = '';
+
+const TYPE_META = {
+  diesel:  {color:'var(--diesel)',  hex:'#8A4B24'},
+  food:    {color:'var(--food)',    hex:'#3E7D44'},
+  material:{color:'var(--material)',hex:'#2B5D8A'},
+  payment: {color:'var(--payment)', hex:'#1F5B57'}
+};
+const TYPE_LABEL_KEY = {diesel:'typeDiesel', food:'typeFood', material:'typeMaterial', payment:'typePayment'};
+function typeLabel(type){ return t(TYPE_LABEL_KEY[type]); }
+
+function uid(){ return 'x'+Date.now().toString(36)+Math.random().toString(36).slice(2,8); }
+function todayISO(){ const d=new Date(); return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
+
+/* ======================= Auto Arabic font detection ======================= */
+const ARABIC_TEXT_RE = /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/;
+function autoDetectArabicFont(el){
+  if(!el || (el.tagName !== 'INPUT' && el.tagName !== 'TEXTAREA')) return;
+  el.classList.toggle('auto-ar-text', ARABIC_TEXT_RE.test(el.value || ''));
+}
+document.addEventListener('input', e=> autoDetectArabicFont(e.target), true);
+
+/* ======================= Totals ======================= */
+function totals(){
+  const t = {diesel:0, food:0, material:0, payment:0};
+  allEntries.forEach(e=>{ t[e.type] = (t[e.type]||0) + (Number(e.amount)||0); });
+  t.spent = t.diesel + t.food + t.material;
+  t.balance = t.payment - t.spent;
+  return t;
+}
+
+/* ======================= Rendering ======================= */
+function renderAll(){
+  const t_ = totals();
+  document.getElementById('topBalance').textContent = fmt(t_.balance);
+  document.getElementById('topBalance').className = 'val mono ' + (t_.balance < 0 ? 'neg' : 'pos');
+  document.getElementById('heroBalance').textContent = fmt(t_.balance);
+  document.getElementById('heroSub').textContent = t('receivedSpent', {received: fmt(t_.payment), spent: fmt(t_.spent)});
+  document.getElementById('statDiesel').textContent = fmt(t_.diesel);
+  document.getElementById('statFood').textContent = fmt(t_.food);
+  document.getElementById('statMaterial').textContent = fmt(t_.material);
+  document.getElementById('statPayment').textContent = fmt(t_.payment);
+
+  renderChart(t_);
+  renderVehicleSummary();
+  renderList('recentList', allEntries.slice().sort(byDateDesc).slice(0,6), true);
+  renderList('dieselList', allEntries.filter(e=>e.type==='diesel').sort(byDateDesc));
+  renderList('foodList', allEntries.filter(e=>e.type==='food').sort(byDateDesc));
+  renderList('materialList', allEntries.filter(e=>e.type==='material').sort(byDateDesc));
+  renderList('paymentList', allEntries.filter(e=>e.type==='payment').sort(byDateDesc));
+  renderList('billsList', allEntries.slice().sort(byDateDesc));
+}
+function byDateDesc(a,b){ return (b.date||'').localeCompare(a.date||'') || (b.createdAt||0)-(a.createdAt||0); }
+
+function renderChart(t_){
+  const rows = document.getElementById('chartRows');
+  rows.innerHTML = '';
+  const cats = [
+    {key:'diesel', label:typeLabel('diesel'), color:'var(--diesel)'},
+    {key:'food', label:typeLabel('food'), color:'var(--food)'},
+    {key:'material', label:typeLabel('material'), color:'var(--material)'}
+  ];
+  const max = Math.max(t_.diesel, t_.food, t_.material, 1);
+  cats.forEach(c=>{
+    const val = t_[c.key] || 0;
+    const pct = Math.max(2, Math.round((val/max)*100));
+    const row = document.createElement('div');
+    row.className = 'bar-row';
+    row.innerHTML = `
+      <div class="bar-row-top">
+        <div class="name"><span class="dot" style="width:8px;height:8px;border-radius:2px;display:inline-block;background:${c.color}"></span>${escapeHtml(c.label)}</div>
+        <div class="val">${fmt(val)}</div>
+      </div>
+      <div class="bar-track"><div class="bar-fill" style="width:${pct}%; background:${c.color};"></div></div>
+    `;
+    rows.appendChild(row);
+  });
+}
+
+function vehicleKey(e){ return (e.vehicleName||'').trim() + '|' + (e.plateNumber||'').trim(); }
+function renderVehicleSummary(){
+  const card = document.getElementById('vehicleSummaryCard');
+  const rowsEl = document.getElementById('vehicleRows');
+  const fuelEntries = allEntries.filter(e=> e.type==='diesel' && (e.vehicleName || e.plateNumber));
+  if(!fuelEntries.length){ card.style.display = 'none'; return; }
+  const groups = {};
+  fuelEntries.forEach(e=>{
+    const k = vehicleKey(e);
+    if(!groups[k]) groups[k] = {name:e.vehicleName||'', plate:e.plateNumber||'', amount:0, liters:0};
+    groups[k].amount += Number(e.amount)||0;
+    groups[k].liters += Number(e.liters)||0;
+  });
+  const list = Object.values(groups).sort((a,b)=> b.amount - a.amount);
+  const maxAmt = Math.max(...list.map(g=>g.amount), 1);
+  rowsEl.innerHTML = '';
+  list.forEach(g=>{
+    const pct = Math.max(2, Math.round((g.amount/maxAmt)*100));
+    const label = [g.name, g.plate].filter(Boolean).join(' \u00b7 ');
+    const litersStr = g.liters ? (' \u00b7 ' + g.liters.toLocaleString('en-US') + ' L') : '';
+    const row = document.createElement('div');
+    row.className = 'bar-row';
+    row.innerHTML = `
+      <div class="bar-row-top">
+        <div class="name">${escapeHtml(label)}</div>
+        <div class="val">${fmt(g.amount)}${litersStr}</div>
+      </div>
+      <div class="bar-track"><div class="bar-fill" style="width:${pct}%; background:var(--diesel);"></div></div>
+    `;
+    rowsEl.appendChild(row);
+  });
+  card.style.display = 'block';
+}
+
+function renderList(containerId, items, compact){
+  const container = document.getElementById(containerId);
+  container.innerHTML = '';
+  if(!items.length){
+    const empty = document.createElement('div');
+    empty.className = 'empty-note';
+    empty.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 9V2h9l5 5v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-1"/></svg><div>'+escapeHtml(t('noEntriesYet'))+'</div>';
+    container.appendChild(empty);
+    return;
+  }
+  items.forEach(e=>{
+    const meta = TYPE_META[e.type];
+    const mLabel = typeLabel(e.type);
+    const row = document.createElement('div');
+    row.className = 'entry-row';
+    let thumbHtml;
+    if(e.billPhoto){
+      thumbHtml = `<img class="entry-thumb" src="${e.billPhoto}">`;
+    } else {
+      thumbHtml = `<div class="entry-thumb-placeholder" style="background:${meta.hex}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9V2h9l5 5v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-1"/></svg></div>`;
+    }
+    let title, subParts = [];
+    if(e.type === 'payment'){
+      title = e.paymentMethod === 'other' ? (e.personName || t('methodOther')) : t('method'+capFirst(e.paymentMethod||'cash'));
+      if(compact) subParts.push(mLabel);
+      subParts.push(formatDate(e.date));
+      if(e.note) subParts.push(e.note);
+    } else if(e.type === 'diesel'){
+      title = e.vehicleName || mLabel;
+      if(compact) subParts.push(mLabel);
+      subParts.push(formatDate(e.date));
+      if(e.plateNumber) subParts.push(e.plateNumber);
+      if(e.liters) subParts.push(e.liters + ' L');
+    } else {
+      title = e.desc || mLabel;
+      if(compact) subParts.push(mLabel);
+      subParts.push(formatDate(e.date));
+      if(e.site) subParts.push(e.site);
+    }
+    const isIn = e.type === 'payment';
+    row.innerHTML = `
+      ${thumbHtml}
+      <div class="entry-mid">
+        <div class="entry-title">${escapeHtml(title)}</div>
+        <div class="entry-sub">${escapeHtml(subParts.join(' \u00b7 '))}</div>
+      </div>
+      <div class="entry-amt ${isIn?'in':'out'} mono">${isIn?'+':'-'}${fmt(e.amount)}</div>
+    `;
+    row.addEventListener('click', ()=> openEntrySheet(e));
+    container.appendChild(row);
+  });
+}
+function capFirst(s){ return s ? s.charAt(0).toUpperCase()+s.slice(1) : s; }
+function formatDate(iso){
+  if(!iso) return '';
+  const d = new Date(iso+'T00:00:00');
+  if(isNaN(d)) return iso;
+  return d.toLocaleDateString('en-GB', {day:'2-digit', month:'short', year:'numeric'});
+}
+function escapeHtml(s){
+  return String(s||'').replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+
+/* ======================= Views / tabs ======================= */
+document.getElementById('tabbar').addEventListener('click', e=>{
+  const btn = e.target.closest('.tab');
+  if(!btn) return;
+  document.querySelectorAll('.tab').forEach(t=> t.classList.remove('active'));
+  btn.classList.add('active');
+  const map = {dashboard:'viewDashboard', diesel:'viewDiesel', food:'viewFood', material:'viewMaterial', payment:'viewPayment', bills:'viewBills'};
+  document.querySelectorAll('.view').forEach(v=> v.classList.remove('active'));
+  document.getElementById(map[btn.dataset.view]).classList.add('active');
+});
+document.querySelectorAll('[data-jump]').forEach(el=>{
+  el.addEventListener('click', ()=>{
+    const target = el.dataset.jump;
+    document.querySelectorAll('.tab').forEach(t=> t.classList.toggle('active', t.dataset.view===target));
+    document.querySelectorAll('.view').forEach(v=> v.classList.remove('active'));
+    document.getElementById('viewBills').classList.add('active');
+  });
+});
+
+/* ======================= Add / Edit entry sheet ======================= */
+function preventFocusSteal(el){ el.addEventListener('mousedown', e=> e.preventDefault()); }
+
+function updateFieldVisibility(){
+  const type = document.getElementById('fType').value;
+  document.getElementById('fDescLabel').textContent = type==='material' ? t('fieldMaterialDesc') : t('fieldDescriptionGeneric');
+  document.getElementById('fDescWrap').style.display = (type==='food' || type==='material') ? 'block' : 'none';
+  document.getElementById('fSiteWrap').style.display = (type==='material') ? 'block' : 'none';
+  document.getElementById('fPaymentMethodWrap').style.display = type==='payment' ? 'block' : 'none';
+  document.getElementById('fFuelTypeWrap').style.display = type==='diesel' ? 'block' : 'none';
+  document.getElementById('fVehicleNameWrap').style.display = type==='diesel' ? 'block' : 'none';
+  document.getElementById('fPlateNumberWrap').style.display = type==='diesel' ? 'block' : 'none';
+  document.getElementById('fLitersWrap').style.display = type==='diesel' ? 'block' : 'none';
+  updatePersonNameVisibility();
+  document.getElementById('sheetTitle').textContent = (editingId ? t('editPrefix') : t('addPrefix')) + typeLabel(type);
+}
+function updatePersonNameVisibility(){
+  const type = document.getElementById('fType').value;
+  const method = document.getElementById('fPaymentMethod').value;
+  document.getElementById('fPersonNameWrap').style.display = (type==='payment' && method==='other') ? 'block' : 'none';
+}
+document.getElementById('fType').addEventListener('change', updateFieldVisibility);
+document.getElementById('fPaymentMethod').addEventListener('change', updatePersonNameVisibility);
+
+function openEntrySheet(entry){
+  editingId = entry ? entry.id : null;
+  pendingBillDataUrl = entry ? (entry.billPhoto || '') : '';
+  document.getElementById('fType').value = entry ? entry.type : (currentTabType() || 'diesel');
+  document.getElementById('fDate').value = entry ? entry.date : todayISO();
+  document.getElementById('fAmount').value = entry ? entry.amount : '';
+  document.getElementById('fDesc').value = entry ? (entry.desc || '') : '';
+  document.getElementById('fSite').value = entry ? (entry.site || '') : '';
+  document.getElementById('fNote').value = entry ? (entry.note || '') : '';
+  document.getElementById('fPaymentMethod').value = entry ? (entry.paymentMethod || 'cash') : 'cash';
+  document.getElementById('fPersonName').value = entry ? (entry.personName || '') : '';
+  document.getElementById('fFuelType').value = entry ? (entry.fuelType || 'diesel') : 'diesel';
+  document.getElementById('fVehicleName').value = entry ? (entry.vehicleName || '') : '';
+  document.getElementById('fPlateNumber').value = entry ? (entry.plateNumber || '') : '';
+  document.getElementById('fLiters').value = entry ? (entry.liters || '') : '';
+  ['fDesc','fSite','fNote','fPersonName','fVehicleName','fPlateNumber'].forEach(id=> autoDetectArabicFont(document.getElementById(id)));
+  document.getElementById('btnDeleteEntry').style.display = entry ? 'flex' : 'none';
+  renderBillPreview();
+  updateFieldVisibility();
+  document.getElementById('entrySheetOverlay').classList.add('open');
+}
+function currentTabType(){
+  const active = document.querySelector('.tab.active');
+  const v = active ? active.dataset.view : 'dashboard';
+  return ['diesel','food','material','payment'].includes(v) ? v : null;
+}
+function closeEntrySheet(){
+  document.getElementById('entrySheetOverlay').classList.remove('open');
+  editingId = null;
+  pendingBillDataUrl = '';
+}
+document.getElementById('btnAddEntry').addEventListener('click', ()=> openEntrySheet(null));
+preventFocusSteal(document.getElementById('btnAddEntry'));
+document.getElementById('btnCancelEntry').addEventListener('click', closeEntrySheet);
+document.getElementById('entrySheetOverlay').addEventListener('click', e=>{
+  if(e.target.id === 'entrySheetOverlay') closeEntrySheet();
+});
+
+document.getElementById('btnSaveEntry').addEventListener('click', async ()=>{
+  const type = document.getElementById('fType').value;
+  const amount = parseFloat(document.getElementById('fAmount').value);
+  if(!amount || amount <= 0){ showToast(t('toastEnterAmount')); return; }
+  const entry = {
+    id: editingId || uid(),
+    type,
+    date: document.getElementById('fDate').value || todayISO(),
+    amount,
+    desc: document.getElementById('fDesc').value.trim(),
+    site: document.getElementById('fSite').value.trim(),
+    note: document.getElementById('fNote').value.trim(),
+    paymentMethod: document.getElementById('fPaymentMethod').value,
+    personName: document.getElementById('fPersonName').value.trim(),
+    fuelType: document.getElementById('fFuelType').value,
+    vehicleName: document.getElementById('fVehicleName').value.trim(),
+    plateNumber: document.getElementById('fPlateNumber').value.trim(),
+    liters: parseFloat(document.getElementById('fLiters').value) || 0,
+    billPhoto: pendingBillDataUrl,
+    createdAt: editingId ? (allEntries.find(e=>e.id===editingId)||{}).createdAt || Date.now() : Date.now()
+  };
+  await dbPut(entry);
+  const idx = allEntries.findIndex(e=> e.id === entry.id);
+  if(idx>-1) allEntries[idx] = entry; else allEntries.push(entry);
+  renderAll();
+  closeEntrySheet();
+  showToast(t('toastSaved'));
+});
+document.getElementById('btnDeleteEntry').addEventListener('click', async ()=>{
+  if(!editingId) return;
+  if(!confirm(t('confirmDeleteEntry'))) return;
+  await dbDelete(editingId);
+  allEntries = allEntries.filter(e=> e.id !== editingId);
+  renderAll();
+  closeEntrySheet();
+  showToast(t('toastDeleted'));
+});
+
+/* ======================= Bill photo capture ======================= */
+function renderBillPreview(){
+  const img = document.getElementById('billImg');
+  const addLbl = document.getElementById('billAddLbl');
+  const rm = document.getElementById('billRemove');
+  if(pendingBillDataUrl){
+    img.src = pendingBillDataUrl;
+    img.style.display = 'block';
+    addLbl.style.display = 'none';
+    rm.style.display = 'flex';
+  } else {
+    img.style.display = 'none';
+    addLbl.style.display = 'flex';
+    rm.style.display = 'none';
+  }
+}
+function fileToDataUrl(file){
+  return new Promise((resolve, reject)=>{
+    const reader = new FileReader();
+    reader.onload = ()=> resolve(reader.result);
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+function loadImageEl(src){
+  return new Promise((resolve, reject)=>{
+    const img = new Image();
+    img.onload = ()=> resolve(img);
+    img.onerror = reject;
+    img.src = src;
+  });
+}
+/* Render page 1 of a PDF to a high-resolution JPEG data URL (auto-convert PDF -> image) */
+async function convertPdfFirstPageToDataUrl(file, targetLongSide=2000){
+  const buf = await file.arrayBuffer();
+  const pdf = await pdfjsLib.getDocument({data: buf}).promise;
+  const page = await pdf.getPage(1);
+  const base = page.getViewport({scale:1});
+  const scale = Math.max(targetLongSide / Math.max(base.width, base.height), 1);
+  const viewport = page.getViewport({scale});
+  const canvas = document.createElement('canvas');
+  canvas.width = Math.round(viewport.width);
+  canvas.height = Math.round(viewport.height);
+  const ctx = canvas.getContext('2d');
+  ctx.fillStyle = '#fff'; ctx.fillRect(0,0,canvas.width,canvas.height);
+  await page.render({canvasContext: ctx, viewport}).promise;
+  return canvas.toDataURL('image/jpeg', 0.92);
+}
+/* ---- Auto document-edge detection (heuristic bounding box) ---- */
+function autoDetectQuad(srcCanvas){
+  const W = srcCanvas.width, H = srcCanvas.height;
+  const aw = 240, ah = Math.max(1, Math.round(H * aw / W));
+  const c = document.createElement('canvas');
+  c.width = aw; c.height = ah;
+  const cx = c.getContext('2d');
+  cx.drawImage(srcCanvas, 0, 0, aw, ah);
+  const data = cx.getImageData(0,0,aw,ah).data;
+  const gray = new Float32Array(aw*ah);
+  const hist = new Array(256).fill(0);
+  for(let i=0;i<aw*ah;i++){
+    const r=data[i*4], g=data[i*4+1], b=data[i*4+2];
+    const v = 0.299*r+0.587*g+0.114*b;
+    gray[i]=v; hist[Math.min(255,Math.round(v))]++;
+  }
+  const total = aw*ah;
+  let sum=0; for(let i=0;i<256;i++) sum += i*hist[i];
+  let sumB=0, wB=0, maxVar=0, threshold=127;
+  for(let tt=0; tt<256; tt++){
+    wB += hist[tt]; if(wB===0) continue;
+    const wF = total-wB; if(wF===0) break;
+    sumB += tt*hist[tt];
+    const mB = sumB/wB, mF=(sum-sumB)/wF;
+    const varBetween = wB*wF*(mB-mF)*(mB-mF);
+    if(varBetween>maxVar){ maxVar=varBetween; threshold=tt; }
+  }
+  let minX=aw,maxX=0,minY=ah,maxY=0,count=0;
+  for(let y=0;y<ah;y++){
+    for(let x=0;x<aw;x++){
+      if(gray[y*aw+x] >= threshold){
+        count++;
+        if(x<minX)minX=x; if(x>maxX)maxX=x;
+        if(y<minY)minY=y; if(y>maxY)maxY=y;
+      }
+    }
+  }
+  const area = count/total;
+  let x0,y0,x1,y1;
+  if(area>0.12 && area<0.95 && maxX>minX && maxY>minY){
+    x0=minX/aw; y0=minY/ah; x1=maxX/aw; y1=maxY/ah;
+  } else {
+    x0=0.06; y0=0.06; x1=0.94; y1=0.94;
+  }
+  const padX=(x1-x0)*0.02, padY=(y1-y0)*0.02;
+  x0=Math.max(0,x0-padX); y0=Math.max(0,y0-padY);
+  x1=Math.min(1,x1+padX); y1=Math.min(1,y1+padY);
+  return [
+    {x:x0*W, y:y0*H}, {x:x1*W, y:y0*H}, {x:x1*W, y:y1*H}, {x:x0*W, y:y1*H}
+  ];
+}
+function dist(a,b){ return Math.hypot(a.x-b.x, a.y-b.y); }
+function quadDims(q){
+  const w = (dist(q[0],q[1]) + dist(q[3],q[2]))/2;
+  const h = (dist(q[0],q[3]) + dist(q[1],q[2]))/2;
+  return {w: Math.max(1,Math.round(w)), h: Math.max(1,Math.round(h))};
+}
+function squareToQuadCoeffs(x0,y0,x1,y1,x2,y2,x3,y3){
+  const dx1=x1-x2, dx2=x3-x2, dx3=x0-x1+x2-x3;
+  const dy1=y1-y2, dy2=y3-y2, dy3=y0-y1+y2-y3;
+  let g=0, h=0;
+  if(Math.abs(dx3)>1e-9 || Math.abs(dy3)>1e-9){
+    const denom = dx1*dy2 - dx2*dy1;
+    g = (dx3*dy2 - dx2*dy3)/denom;
+    h = (dx1*dy3 - dx3*dy1)/denom;
+  }
+  const a = x1-x0+g*x1, b = x3-x0+h*x3, c = x0;
+  const d = y1-y0+g*y1, e = y3-y0+h*y3, f = y0;
+  return {a,b,c,d,e,f,g,h};
+}
+/* Perspective-correct crop: warps the quad drawn on the source photo into a flat rectangle (like a document scanner) */
+function warpPerspective(srcCanvas, quad, outW, outH){
+  const co = squareToQuadCoeffs(quad[0].x,quad[0].y, quad[1].x,quad[1].y, quad[2].x,quad[2].y, quad[3].x,quad[3].y);
+  const sctx = srcCanvas.getContext('2d');
+  const sw = srcCanvas.width, sh = srcCanvas.height;
+  const srcData = sctx.getImageData(0,0,sw,sh).data;
+  const out = document.createElement('canvas');
+  out.width = outW; out.height = outH;
+  const octx = out.getContext('2d');
+  const outImg = octx.createImageData(outW, outH);
+  const oPix = outImg.data;
+  for(let py=0; py<outH; py++){
+    const v = py/outH;
+    for(let px=0; px<outW; px++){
+      const u = px/outW;
+      const denom = co.g*u + co.h*v + 1;
+      const X = (co.a*u + co.b*v + co.c)/denom;
+      const Y = (co.d*u + co.e*v + co.f)/denom;
+      const oi = (py*outW+px)*4;
+      if(X<0||Y<0||X>=sw-1||Y>=sh-1){
+        oPix[oi]=255; oPix[oi+1]=255; oPix[oi+2]=255; oPix[oi+3]=255;
+        continue;
+      }
+      const x0=Math.floor(X), y0=Math.floor(Y), fx=X-x0, fy=Y-y0;
+      const i00=(y0*sw+x0)*4, i10=(y0*sw+x0+1)*4, i01=((y0+1)*sw+x0)*4, i11=((y0+1)*sw+x0+1)*4;
+      for(let ch=0; ch<3; ch++){
+        const top = srcData[i00+ch]*(1-fx)+srcData[i10+ch]*fx;
+        const bot = srcData[i01+ch]*(1-fx)+srcData[i11+ch]*fx;
+        oPix[oi+ch] = top*(1-fy)+bot*fy;
+      }
+      oPix[oi+3]=255;
+    }
+  }
+  octx.putImageData(outImg, 0, 0);
+  return out;
+}
+/* Interactive scan-style cropper. Resolves with a cropped HD JPEG data URL, or null if cancelled. */
+function openCropper(dataUrl){
+  return new Promise(async (resolve)=>{
+    const overlay = document.getElementById('cropperOverlay');
+    const spinner = document.getElementById('cropSpinner');
+    const stage = document.getElementById('cropperStage');
+    const canvas = document.getElementById('cropCanvas');
+    const svg = document.getElementById('cropQuadSvg');
+    const handles = [0,1,2,3].map(i=>document.getElementById('cropH'+i));
+    const autoBtn = document.getElementById('btnCropAuto');
+    const cancelBtn = document.getElementById('btnCropCancel');
+    const confirmBtn = document.getElementById('btnCropConfirm');
+
+    overlay.classList.add('open');
+    spinner.classList.add('show');
+    let img;
+    try{ img = await loadImageEl(dataUrl); }
+    catch(e){ overlay.classList.remove('open'); spinner.classList.remove('show'); resolve(null); return; }
+
+    const srcCanvas = document.createElement('canvas');
+    srcCanvas.width = img.naturalWidth; srcCanvas.height = img.naturalHeight;
+    srcCanvas.getContext('2d').drawImage(img,0,0);
+    spinner.classList.remove('show');
+
+    const stageRect = stage.getBoundingClientRect();
+    const pad = 26;
+    const availW = Math.max(50, stageRect.width - pad*2);
+    const availH = Math.max(50, stageRect.height - pad*2);
+    const scale = Math.min(availW/srcCanvas.width, availH/srcCanvas.height, 1.5);
+    const dispW = srcCanvas.width*scale, dispH = srcCanvas.height*scale;
+    canvas.width = dispW; canvas.height = dispH;
+    canvas.style.width = dispW+'px'; canvas.style.height = dispH+'px';
+    canvas.style.left = ((stageRect.width-dispW)/2)+'px';
+    canvas.style.top = ((stageRect.height-dispH)/2)+'px';
+    canvas.getContext('2d').drawImage(srcCanvas,0,0,dispW,dispH);
+    svg.setAttribute('width', stageRect.width); svg.setAttribute('height', stageRect.height);
+    svg.style.width = stageRect.width+'px'; svg.style.height = stageRect.height+'px';
+
+    const offsetX = (stageRect.width-dispW)/2, offsetY = (stageRect.height-dispH)/2;
+    let quadSrc = autoDetectQuad(srcCanvas);
+
+    function srcToDisp(p){ return {x: p.x*scale+offsetX, y: p.y*scale+offsetY}; }
+    function dispToSrc(p){ return {x: (p.x-offsetX)/scale, y: (p.y-offsetY)/scale}; }
+    function redrawQuad(){
+      const dp = quadSrc.map(srcToDisp);
+      handles.forEach((h,i)=>{ h.style.left = dp[i].x+'px'; h.style.top = dp[i].y+'px'; });
+      svg.innerHTML = `<polygon points="${dp.map(p=>p.x+','+p.y).join(' ')}" fill="rgba(31,91,87,0.20)" stroke="#1F5B57" stroke-width="2.5"/>`;
+    }
+    redrawQuad();
+
+    let dragIdx = -1;
+    const downHandlers = handles.map((h,i)=> (e)=>{
+      dragIdx = i;
+      if(e.pointerId!=null && e.target.setPointerCapture) e.target.setPointerCapture(e.pointerId);
+      e.preventDefault();
+    });
+    function onMove(e){
+      if(dragIdx<0) return;
+      const r = stage.getBoundingClientRect();
+      const dx = Math.min(Math.max(e.clientX-r.left,0), r.width);
+      const dy = Math.min(Math.max(e.clientY-r.top,0), r.height);
+      const sp = dispToSrc({x:dx,y:dy});
+      quadSrc[dragIdx] = {
+        x: Math.min(Math.max(sp.x,0), srcCanvas.width),
+        y: Math.min(Math.max(sp.y,0), srcCanvas.height)
+      };
+      redrawQuad();
+      e.preventDefault();
+    }
+    function onUp(){ dragIdx = -1; }
+    function onAuto(){ quadSrc = autoDetectQuad(srcCanvas); redrawQuad(); }
+
+    handles.forEach((h,i)=> h.addEventListener('pointerdown', downHandlers[i]));
+    stage.addEventListener('pointermove', onMove);
+    window.addEventListener('pointerup', onUp);
+    autoBtn.addEventListener('click', onAuto);
+
+    function cleanup(){
+      overlay.classList.remove('open');
+      handles.forEach((h,i)=> h.removeEventListener('pointerdown', downHandlers[i]));
+      stage.removeEventListener('pointermove', onMove);
+      window.removeEventListener('pointerup', onUp);
+      autoBtn.removeEventListener('click', onAuto);
+      cancelBtn.removeEventListener('click', onCancel);
+      confirmBtn.removeEventListener('click', onConfirm);
+    }
+    function onCancel(){ cleanup(); resolve(null); }
+    async function onConfirm(){
+      spinner.classList.add('show');
+      await new Promise(r=> setTimeout(r,20));
+      try{
+        const dims = quadDims(quadSrc);
+        const longSide = Math.max(dims.w, dims.h);
+        const targetLong = Math.min(Math.max(longSide, 900), 2200);
+        const ratio = targetLong/longSide;
+        const outW = Math.max(1,Math.round(dims.w*ratio)), outH = Math.max(1,Math.round(dims.h*ratio));
+        const outCanvas = warpPerspective(srcCanvas, quadSrc, outW, outH);
+        const finalUrl = outCanvas.toDataURL('image/jpeg', 0.92);
+        spinner.classList.remove('show');
+        cleanup();
+        resolve(finalUrl);
+      }catch(err){
+        spinner.classList.remove('show');
+        cleanup();
+        resolve(null);
+      }
+    }
+    cancelBtn.addEventListener('click', onCancel);
+    confirmBtn.addEventListener('click', onConfirm);
+  });
+}
+function pickPhotoSource(){
+  return new Promise(resolve=>{
+    const overlay = document.getElementById('sourceOverlay');
+    overlay.classList.add('open');
+    function cleanup(){
+      overlay.classList.remove('open');
+      camBtn.removeEventListener('click', onCam);
+      galBtn.removeEventListener('click', onGal);
+      pdfBtn.removeEventListener('click', onPdf);
+      overlay.removeEventListener('click', onOutside);
+    }
+    const camBtn = document.getElementById('srcCamera');
+    const galBtn = document.getElementById('srcGallery');
+    const pdfBtn = document.getElementById('srcPdf');
+    function onCam(){ cleanup(); resolve('camera'); }
+    function onGal(){ cleanup(); resolve('gallery'); }
+    function onPdf(){ cleanup(); resolve('pdf'); }
+    function onOutside(e){ if(e.target.id==='sourceOverlay'){ cleanup(); resolve(null); } }
+    camBtn.addEventListener('click', onCam);
+    galBtn.addEventListener('click', onGal);
+    pdfBtn.addEventListener('click', onPdf);
+    overlay.addEventListener('click', onOutside);
+  });
+}
+document.getElementById('billAddLbl').addEventListener('click', async ()=>{
+  const source = await pickPhotoSource();
+  if(!source) return;
+  const input = document.createElement('input');
+  input.type = 'file';
+  if(source === 'pdf'){ input.accept = 'application/pdf'; }
+  else { input.accept = 'image/*'; if(source==='camera') input.capture = 'environment'; }
+  input.addEventListener('change', async ()=>{
+    const file = input.files && input.files[0];
+    if(!file) return;
+    try{
+      let dataUrl;
+      if(source === 'pdf'){
+        dataUrl = await convertPdfFirstPageToDataUrl(file);
+        showToast(t('toastPdfConverted'));
+      } else {
+        dataUrl = await fileToDataUrl(file);
+      }
+      const cropped = await openCropper(dataUrl);
+      if(cropped){
+        pendingBillDataUrl = cropped;
+        renderBillPreview();
+      }
+    }catch(e){
+      showToast(source==='pdf' ? t('toastCouldNotReadPdf') : t('toastCouldNotRead'));
+    }
+  });
+  input.click();
+});
+document.getElementById('billRemove').addEventListener('click', ()=>{
+  pendingBillDataUrl = '';
+  renderBillPreview();
+});
+document.getElementById('billImg').addEventListener('click', ()=>{
+  if(pendingBillDataUrl) openImageViewer(pendingBillDataUrl);
+});
+
+/* ======================= Image viewer ======================= */
+function openImageViewer(src){
+  document.getElementById('viewerImg').src = src;
+  document.getElementById('imgViewer').classList.add('open');
+}
+document.getElementById('btnCloseViewer').addEventListener('click', ()=>{
+  document.getElementById('imgViewer').classList.remove('open');
+});
+document.getElementById('imgViewer').addEventListener('click', e=>{
+  if(e.target.id === 'imgViewer') document.getElementById('imgViewer').classList.remove('open');
+});
+document.getElementById('btnShareBillPdf').addEventListener('click', async ()=>{
+  const src = document.getElementById('viewerImg').src;
+  if(!src) return;
+  try{
+    const img = await loadImageEl(src);
+    const { jsPDF } = window.jspdf;
+    const w = img.naturalWidth, h = img.naturalHeight;
+    const pdf = new jsPDF({ unit:'px', format:[w,h], orientation: w>h?'l':'p' });
+    pdf.addImage(src, 'JPEG', 0, 0, w, h);
+    const blob = pdf.output('blob');
+    const fileName = 'bill-' + Date.now() + '.pdf';
+    const pdfFile = new File([blob], fileName, {type:'application/pdf'});
+    if(navigator.canShare && navigator.canShare({files:[pdfFile]})){
+      await navigator.share({ files:[pdfFile], title: fileName });
+    } else {
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = fileName;
+      document.body.appendChild(a); a.click(); document.body.removeChild(a);
+      setTimeout(()=> URL.revokeObjectURL(url), 4000);
+    }
+    showToast(t('toastPdfCreated'));
+  }catch(e){
+    showToast(t('toastPdfFailed'));
+  }
+});
+
+/* ======================= Settings ======================= */
+let selectedLang = 'en';
+function openSettings(){
+  document.getElementById('setYourName').value = settings.yourName || '';
+  document.getElementById('setCompanyName').value = settings.companyName || '';
+  document.getElementById('setCurrency').value = settings.currency || 'Rs';
+  autoDetectArabicFont(document.getElementById('setYourName'));
+  autoDetectArabicFont(document.getElementById('setCompanyName'));
+  selectedLang = lang();
+  updateLangButtons();
+  document.getElementById('settingsOverlay').classList.add('open');
+}
+function updateLangButtons(){
+  document.getElementById('btnLangEn').classList.toggle('active', selectedLang==='en');
+  document.getElementById('btnLangAr').classList.toggle('active', selectedLang==='ar');
+}
+document.getElementById('btnLangEn').addEventListener('click', ()=>{ selectedLang='en'; updateLangButtons(); });
+document.getElementById('btnLangAr').addEventListener('click', ()=>{ selectedLang='ar'; updateLangButtons(); });
+document.getElementById('btnSettings').addEventListener('click', openSettings);
+document.getElementById('btnCloseSettings').addEventListener('click', ()=>{
+  document.getElementById('settingsOverlay').classList.remove('open');
+});
+document.getElementById('settingsOverlay').addEventListener('click', e=>{
+  if(e.target.id === 'settingsOverlay') document.getElementById('settingsOverlay').classList.remove('open');
+});
+function updateBrandSub(){
+  document.getElementById('brandSub').textContent = settings.companyName ? t('appSubCompany', {company: settings.companyName}) : t('appSub');
+}
+document.getElementById('btnSaveSettings').addEventListener('click', ()=>{
+  settings.yourName = document.getElementById('setYourName').value.trim();
+  settings.companyName = document.getElementById('setCompanyName').value.trim();
+  settings.currency = document.getElementById('setCurrency').value.trim() || 'Rs';
+  settings.lang = selectedLang;
+  saveSettings(settings);
+  applyTranslations();
+  updateBrandSub();
+  renderAll();
+  document.getElementById('settingsOverlay').classList.remove('open');
+  showToast(t('toastSettingsSaved'));
+});
+
+/* ======================= Toast ======================= */
+let toastTimer = null;
+function showToast(msg){
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=> el.classList.remove('show'), 2000);
+}
+
+/* ======================= Print / Share statement ======================= */
+function billThumbCell(e){
+  return e.billPhoto ? `<td class="bill-yes">&#10003;</td>` : '<td>\u2013</td>';
+}
+function billDetailRows(e){
+  const rows = [{k:t('colDate'), v: formatDate(e.date)}];
+  if(e.type==='payment'){
+    const methodLabel = e.paymentMethod==='other' ? (e.personName||t('methodOther')) : t('method'+capFirst(e.paymentMethod||'cash'));
+    rows.push({k:t('colMethod'), v: methodLabel});
+    if(e.note) rows.push({k:t('colRef'), v: e.note});
+  } else if(e.type==='diesel'){
+    if(e.vehicleName) rows.push({k:t('colVehicle'), v:e.vehicleName});
+    if(e.plateNumber) rows.push({k:t('colPlate'), v:e.plateNumber});
+    rows.push({k:t('colFuelType'), v: t('fuel'+capFirst(e.fuelType||'diesel'))});
+    if(e.liters) rows.push({k:t('colLiters'), v: e.liters.toLocaleString('en-US')});
+    if(e.site) rows.push({k:t('colSite'), v:e.site});
+  } else if(e.type==='food'){
+    if(e.desc) rows.push({k:t('colDescription'), v:e.desc});
+  } else if(e.type==='material'){
+    if(e.desc) rows.push({k:t('colDescription'), v:e.desc});
+    if(e.site) rows.push({k:t('colSite'), v:e.site});
+  }
+  if(e.note && e.type!=='payment') rows.push({k:t('fieldNote'), v:e.note});
+  rows.push({k:t('colAmount'), v: fmt(e.amount)});
+  return rows;
+}
+function buildBillPage(e, sectionTitle){
+  const rows = billDetailRows(e);
+  const gridHtml = rows.map(r=> `<div><div class="k">${escapeHtml(r.k)}</div><div class="v">${escapeHtml(String(r.v))}</div></div>`).join('');
+  return `
+    <div class="pr-bill-page">
+      <div class="pr-bill-header">
+        <div class="pr-bill-title">${escapeHtml(sectionTitle)}</div>
+        <div class="pr-bill-grid">${gridHtml}</div>
+      </div>
+      <div class="pr-bill-image-wrap"><img src="${e.billPhoto}"></div>
+    </div>
+  `;
+}
+function buildPrintReport(){
+  const t_ = totals();
+  const genDate = new Date().toLocaleString('en-GB', {day:'2-digit', month:'short', year:'numeric', hour:'2-digit', minute:'2-digit'});
+  let html = `
+    <div class="pr-page">
+      <div class="pr-header">
+        <div>
+          <div class="title">${escapeHtml(t('printTitle'))}</div>
+          <div class="sub">${escapeHtml(settings.yourName || t('printDefaultName'))}${settings.companyName ? ' &middot; ' + escapeHtml(settings.companyName) : ''}</div>
+        </div>
+        <div class="meta">${escapeHtml(t('printGenerated'))} ${genDate}</div>
+      </div>
+      <div class="pr-summary">
+        <div><div class="lbl">${escapeHtml(t('receivedLbl'))}</div><div class="val">${fmt(t_.payment)}</div></div>
+        <div><div class="lbl">${escapeHtml(typeLabel('diesel'))}</div><div class="val">${fmt(t_.diesel)}</div></div>
+        <div><div class="lbl">${escapeHtml(typeLabel('food'))}</div><div class="val">${fmt(t_.food)}</div></div>
+        <div><div class="lbl">${escapeHtml(typeLabel('material'))}</div><div class="val">${fmt(t_.material)}</div></div>
+        <div><div class="lbl">${escapeHtml(t('balanceLbl'))}</div><div class="val">${fmt(t_.balance)}</div></div>
+      </div>
+  `;
+
+  // Fuel used by vehicle, if any
+  const fuelEntries = allEntries.filter(e=> e.type==='diesel' && (e.vehicleName || e.plateNumber));
+  if(fuelEntries.length){
+    const groups = {};
+    fuelEntries.forEach(e=>{
+      const k = vehicleKey(e);
+      if(!groups[k]) groups[k] = {name:e.vehicleName||'', plate:e.plateNumber||'', amount:0, liters:0};
+      groups[k].amount += Number(e.amount)||0;
+      groups[k].liters += Number(e.liters)||0;
+    });
+    html += `<div class="pr-section-title">${escapeHtml(t('byVehicle'))}</div><table class="pr-table"><thead><tr><th>${escapeHtml(t('colVehicle'))}</th><th>${escapeHtml(t('colPlate'))}</th><th style="text-align:right">${escapeHtml(t('colLiters'))}</th><th style="text-align:right">${escapeHtml(t('colAmount'))}</th></tr></thead><tbody>`;
+    Object.values(groups).sort((a,b)=>b.amount-a.amount).forEach(g=>{
+      html += `<tr><td>${escapeHtml(g.name)}</td><td>${escapeHtml(g.plate)}</td><td class="amt">${g.liters?g.liters.toLocaleString('en-US'):'\u2013'}</td><td class="amt">${fmt(g.amount)}</td></tr>`;
+    });
+    html += `</tbody></table>`;
+  }
+
+  const sections = [
+    {key:'payment', title:t('paymentsReceived'),
+      head:[t('colDate'),t('colMethod'),t('colRef'),t('colAmount'),t('colBill')],
+      row:e=>{
+        const methodLabel = e.paymentMethod==='other' ? (e.personName||t('methodOther')) : t('method'+capFirst(e.paymentMethod||'cash'));
+        return `<td>${formatDate(e.date)}</td><td>${escapeHtml(methodLabel)}</td><td>${escapeHtml(e.note||'')}</td><td class="amt">${fmt(e.amount)}</td>${billThumbCell(e)}`;
+      }},
+    {key:'diesel', title:t('dieselPurchases'),
+      head:[t('colDate'),t('colVehicle'),t('colPlate'),t('colFuelType'),t('colLiters'),t('colSite'),t('colAmount'),t('colBill')],
+      row:e=> `<td>${formatDate(e.date)}</td><td>${escapeHtml(e.vehicleName||'')}</td><td>${escapeHtml(e.plateNumber||'')}</td><td>${escapeHtml(t('fuel'+capFirst(e.fuelType||'diesel')))}</td><td class="amt">${e.liters?e.liters.toLocaleString('en-US'):'\u2013'}</td><td>${escapeHtml(e.site||'')}</td><td class="amt">${fmt(e.amount)}</td>${billThumbCell(e)}`},
+    {key:'food', title:t('foodExpenses'),
+      head:[t('colDate'),t('colDescription'),t('colAmount'),t('colBill')],
+      row:e=> `<td>${formatDate(e.date)}</td><td>${escapeHtml(e.desc||'')}</td><td class="amt">${fmt(e.amount)}</td>${billThumbCell(e)}`},
+    {key:'material', title:t('materialPurchases'),
+      head:[t('colDate'),t('colDescription'),t('colSite'),t('colAmount'),t('colBill')],
+      row:e=> `<td>${formatDate(e.date)}</td><td>${escapeHtml(e.desc||'')}</td><td>${escapeHtml(e.site||'')}</td><td class="amt">${fmt(e.amount)}</td>${billThumbCell(e)}`}
+  ];
+  let billPagesHtml = '';
+  sections.forEach(sec=>{
+    const items = allEntries.filter(e=> e.type===sec.key).sort((a,b)=> (a.date||'').localeCompare(b.date||''));
+    if(!items.length) return;
+    let sum = 0;
+    html += `<div class="pr-section-title">${escapeHtml(sec.title)}</div><table class="pr-table"><thead><tr>`;
+    sec.head.forEach((c,i)=> html += `<th${i===sec.head.length-2?' style="text-align:right"':''}>${escapeHtml(c)}</th>`);
+    html += `</tr></thead><tbody>`;
+    items.forEach(e=>{
+      sum += Number(e.amount)||0;
+      html += '<tr>' + sec.row(e) + '</tr>';
+      if(e.billPhoto) billPagesHtml += buildBillPage(e, sec.title);
+    });
+    html += `</tbody><tfoot><tr><td colspan="${sec.head.length-2}">${escapeHtml(t('colTotal'))}</td><td class="amt">${fmt(sum)}</td><td></td></tr></tfoot></table>`;
+  });
+  html += `</div>` + billPagesHtml;
+  document.getElementById('printArea').innerHTML = html;
+}
+document.getElementById('btnExportPdf').addEventListener('click', async ()=>{
+  buildPrintReport();
+  await waitForPrintImages();
+  window.print();
+});
+function waitForPrintImages(){
+  const imgs = Array.from(document.querySelectorAll('#printArea img'));
+  if(!imgs.length) return Promise.resolve();
+  return Promise.all(imgs.map(img=>{
+    if(img.complete && img.naturalWidth>0) return Promise.resolve();
+    return new Promise(resolve=>{
+      img.addEventListener('load', resolve, {once:true});
+      img.addEventListener('error', resolve, {once:true});
+      setTimeout(resolve, 3000);
+    });
+  }));
+}
+
+/* ======================= Init ======================= */
+async function init(){
+  document.getElementById('fDate').value = todayISO();
+  applyTranslations();
+  updateBrandSub();
+  try{
+    allEntries = await dbGetAll();
+  }catch(e){
+    allEntries = [];
+  }
+  renderAll();
+}
+init();
+</script>
+</body>
+</html>
